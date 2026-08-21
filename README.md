@@ -22,6 +22,13 @@ Upload all four files to the root of the existing `kobychapmans-ship-it/Rangdan-
 
 The catalogue targets HH v1 game-system revision 165, matching the standalone Zutan catalogue.
 
+## Revision 3 compatibility fix
+
+- Dynamic characteristic modifiers are attached to each model's roster-context profile link, so BattleScribe applies them to the existing Unit row instead of leaving the base values unchanged.
+- Manual +/- selections no longer add redundant rules to the printed Selection Rules section.
+- Host-body rule text is unique to each unit/tier, preventing a Lesser host from displaying the Legendary host-body cost description.
+- Regression case: Greater Orks Lesser Host Body + Manual +1 WS/S + Manual +2 T resolves to WS 5, BS 3, S 6, T 8, W 1, I 3, A 2, LD 7, Save 5+/6++.
+
 ## Upgrade-button coverage
 
 The source document was converted into separate, incrementable BattleScribe choices instead of combined text-only upgrades:
@@ -66,6 +73,6 @@ Per-unit audit:
 The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. The source also says eligible wargear from external host factions will be catalogued later; this file therefore provides an explicit manual-cost button and preserves the eligibility text without inventing unavailable faction options.
 
 Catalogue ID: `069890da-d908-533f-9a7b-8ba24b3e3773`  
-Catalogue revision: `2`  
-`Rangdan_Confederacy_HH1.catz` SHA-256: `54713ca15bf8e1fc8fb5dbd7db5c544e0733ad1140b8fc367b454161eaa191cf`  
-`index.bsi` SHA-256: `ffc1ba995c0d298fb454144270a51418b27aaec4f71b873b56a46599b4f5e12f`
+Catalogue revision: `3`  
+`Rangdan_Confederacy_HH1.catz` SHA-256: `90612788a263669e42a6cd90b3078dbf16dab60228610f63fc2717b1f993b861`  
+`index.bsi` SHA-256: `817e0f39ea88831eba888bdb5da19d266f69beab55837d3603181ed5149ea306`
