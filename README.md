@@ -22,30 +22,32 @@ Upload all four files to the root of the existing `kobychapmans-ship-it/Rangdan-
 
 The catalogue targets HH v1 game-system revision 165, matching the standalone Zutan catalogue.
 
-## Revision 4 — modular Osseivore vehicle forms
+Archived HH1 armoury data source: `https://github.com/BSData/horus-heresy-1st-edition` at commit `0a4c10da15f4ea40eea0932090fadafe3b90b696`.
 
-- Lesser, Moderate, Higher and Legendary Osseivore Hosts no longer have the ordinary Rangdan Armour or Mobility / Mount groups. Those groups remain available to eligible non-Osseivore entries.
-- Each Osseivore Host now has exactly one matching-tier modular chassis choice. Selecting it displays the source document's final vehicle profile rather than a text-only rules entry.
-- Chassis costs and totals are encoded per model: Lesser +10 / 40 total, Moderate +40 / 90 total, Higher +150 / 225 total, and Legendary +300 / 450 total.
-- The four profiles encode their printed WS, BS, Strength, Front/Side/Rear Armour, Initiative, Attacks, Hull Points and Vehicle (Tank) type, with 2/4/6/8 hardpoints respectively.
-- Separate controls cover the Facsimile Origin, Walker/Skimmer/Flyer movement patterns, hardpoint use, published-cost and uncosted faction weapons/equipment, and manual source-cost point increments.
-- Transport Ship is repeatable: the first purchase grants Transport, one rear access point and the tier capacity; further purchases add that capacity again without another access point.
-- A complete external host vehicle remains an alternative form. Its melding-values profile appears only when that alternative is chosen.
+## Revision 5 — Cerabvore armouries and option cleanup
 
-The revision 3 live-statline fix is retained: modifiers are attached to each roster-context profile link, manual controls do not create redundant Selection Rules entries, and host-body text stays unique to the correct unit/tier.
+- The Rangda Warleader no longer exposes GMC/Titan Rangdan weapons or Lord of War/Super-heavy external-host allowances. Its ordinary HQ weapons, mobility and Monstrous Creature choices remain.
+- Every Cerabvore entry that can take both a mobility option and a Monstrous mutation now has one combined max-1 group, so the two can no longer be selected together.
+- An Astartes Host Body now reveals a nested HH1 Legion armoury: 18 Legion affiliations and 75 distinct faction-specific host-eligible weapon/equipment entries, with profiles and listed upgrade prices sourced from archived HH1 BSData commit `0a4c10da`. Named-character, Primarch-only, Relic and vehicle-only items are excluded.
+- The Lesser unit's single Moderate Cerabvore upgrade is now a separate Sergeant-style selection. Its natural weapon, regular weapon, specialist/heavy weapon, unique equipment, armour and eligible external host-faction choices are nested under that Moderate model rather than mixed into the Lesser unit's main choices.
+- All Osseivore entries have had the manual source-cost increment buttons and the Facsimile Origin section removed. Their v4 chassis profiles, movement patterns, hardpoints, component placeholders and live displayed-statline changes remain intact.
+- Amalgams, Flesh Abominations and Lesser Amalgams no longer show the manual displayed-statline adjustment or displayed-Save override sections.
+
+The v4 modular chassis work and v3 live-statline fix are retained: matching-tier chassis remain exact selectable vehicle profiles, Transport Ship remains repeatable, and modifiers remain attached to roster-context profile links.
 
 ## Upgrade-button coverage
 
 The source document was converted into separate, incrementable BattleScribe choices instead of combined text-only upgrades:
 
 - 13 unit entries
-- 141 option groups
-- 1411 selectable upgrade entries
+- 210 option groups
+- 1707 selectable upgrade entries
 - 147 host-body selections across eligible profiles
+- 18 HH1 Astartes Legion affiliations, 75 distinct Legion armoury items and 300 profile-level Legion weapon buttons
 - 4 exact modular Osseivore chassis profiles
 - 99 explicit twin-linked weapon selections
-- 2752 live displayed-profile modifiers (2195 conditional and 557 incrementable)
-- 258 zero-cost manual +/- stat buttons and 377 manual Save overrides
+- 2623 live displayed-profile modifiers (2108 conditional and 515 incrementable)
+- 230 zero-cost manual +/- stat buttons and 319 manual Save overrides
 - individual buttons for Strength, Toughness, Weapon Skill, Ballistic Skill, Wounds, Initiative, saves and Mastery Levels where eligible
 - explicit groups for natural weapons, Rangdan weapons, specialist/heavy allowances, eligible non-Osseivore armour and mounts, unique equipment, mutations, external vehicle hosts, modular chassis components, Osseivore modifications and Osseivore upgrades
 
@@ -57,29 +59,29 @@ The source document was converted into separate, incrementable BattleScribe choi
 - Mount bonuses and unit types are applied automatically for eligible non-Osseivore entries where the source gives a numeric change.
 - Osseivore statistic upgrades apply directly to the selected modular chassis row. The tested Higher Skimmer example resolves to WS 6, BS 5, S 9, AV 14/14/12, I 5, A 4 and 7 HP after its selected increments.
 - Unit-wide host bodies, eligible armour/mounts, mutations, chassis forms and statistic upgrades are selected once; their points modifiers charge the listed cost for every model in the unit.
-- The manual +/- and Save override groups are zero-cost display tools for mixed host forms, scenario effects or unusual combinations. They never grant a rules discount.
+- Where retained, the manual +/- and Save override groups are zero-cost display tools for mixed host forms, scenario effects or unusual combinations. They never grant a rules discount; both Amalgam entries intentionally omit them in revision 5.
 
 Per-unit audit:
 
-- Rangda Warleader: 169 selectable upgrade buttons
-- Higher Cerabvore Host: 163 selectable upgrade buttons
-- Moderate Cerabvore Hosts: 129 selectable upgrade buttons
-- Moderate Osseivore Host: 107 selectable upgrade buttons
-- Lesser Cerabvore Hosts: 87 selectable upgrade buttons
-- Lesser Osseivore Host: 88 selectable upgrade buttons
-- Amalgams, Flesh Abominations: 44 selectable upgrade buttons
-- Lesser Amalgams: 43 selectable upgrade buttons
-- Higher Osseivore Host: 128 selectable upgrade buttons
+- Rangda Warleader: 257 selectable upgrade buttons
+- Higher Cerabvore Host: 257 selectable upgrade buttons
+- Moderate Cerabvore Hosts: 223 selectable upgrade buttons
+- Moderate Osseivore Host: 100 selectable upgrade buttons
+- Lesser Cerabvore Hosts: 127 selectable upgrade buttons
+- Lesser Osseivore Host: 81 selectable upgrade buttons
+- Amalgams, Flesh Abominations: 1 selectable upgrade buttons
+- Lesser Amalgams: 0 selectable upgrade buttons
+- Higher Osseivore Host: 121 selectable upgrade buttons
 - Monstrous Osseicerabvore: 101 selectable upgrade buttons
-- Legendary Cerabvore Host: 173 selectable upgrade buttons
-- Legendary Osseivore Host: 136 selectable upgrade buttons
+- Legendary Cerabvore Host: 267 selectable upgrade buttons
+- Legendary Osseivore Host: 129 selectable upgrade buttons
 - Oblivion Parasite: 43 selectable upgrade buttons
 
 ## Source gaps retained honestly
 
-The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. The chassis document permits components from many external faction datasheets but does not enumerate those catalogues. This file therefore preserves each tier's access restrictions and uncosted-component prices, provides hardpoint and manual-cost controls, and does not invent unavailable faction profiles.
+The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Revision 5 begins the external-host armoury expansion with the eighteen Astartes Legions. Other host factions remain represented by the source-priced external choice until their armouries are added. The chassis document permits components from many external vehicle datasheets but does not enumerate their individual profiles; the catalogue preserves tier access, hardpoints and uncosted-component prices without reintroducing manual point-increment buttons.
 
 Catalogue ID: `069890da-d908-533f-9a7b-8ba24b3e3773`  
-Catalogue revision: `4`  
-`Rangdan_Confederacy_HH1.catz` SHA-256: `c60e4b362a1558d26f7961bd11fd6b7bba2a84b3bcbce1b9acedacc7d4abe9be`  
-`index.bsi` SHA-256: `840035bb45d3da4e1b525afefb368541be3e852e84a4318a29b5f2348b58a963`
+Catalogue revision: `5`  
+`Rangdan_Confederacy_HH1.catz` SHA-256: `54dcceaaa22e2007370b5071f71805628c4df4ac178374cd5428f2574b3b70c1`  
+`index.bsi` SHA-256: `0dbf52fe6ee3b0fb403c626dc10151697563f41fa66da0a269ab35eaf4e2930b`
