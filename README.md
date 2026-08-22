@@ -24,27 +24,28 @@ The catalogue targets HH v1 game-system revision 165, matching the standalone Zu
 
 Archived HH1 armoury data source: `https://github.com/BSData/horus-heresy-1st-edition` at commit `0a4c10da15f4ea40eea0932090fadafe3b90b696`.
 
-## Revision 6 — v5 hotfix and Osseivore faction trees
+## Revision 7 — requested V6 faction-armoury expansion
 
-- The Legendary Cerabvore's GMC/Titan Rangdan weapons are now in a separate hidden group. They appear only after selecting **Gargantuan Monstrous Creature** or **Flying Gargantuan Monstrous Creature**. The Warleader continues to have no GMC/Titan weapon allowance.
-- **Walking Meat** is generated only for datasheets limited to one model. It is absent from every multi-model unit and from the Moderate leader embedded in a Lesser brood.
-- **Hidden Mutant** is available only to the two Independent Character entries: the Rangda Warleader and Legendary Cerabvore Host.
-- The separate Moderate Cerabvore profile inside a Lesser brood now receives its own live host-body baseline, racial modifiers, Host Strengthening increments, mount type/bonuses, armour changes and manual display adjustments. The audit example resolves to WS 6, BS 4, S 7, T 9, W 3, I 4, A 3, LD 8 and Save 3+/5++.
-- Every Osseivore now has one max-1 host-faction selector covering 34 host factions. Weapons and equipment are nested beneath the chosen faction. The Astartes branch contains all 18 Legion affiliations and 75 profiled HH1 armoury components; the other factions retain faction-gated source-priced and uncosted-component choices.
-- The former top-level **External Host-Vehicle Upgrades**, **Modular Chassis — Faction Weapons** and **Modular Chassis — Faction Vehicle Equipment** sections have been removed. Their functionality now lives inside the selected host faction.
+- The Astartes armoury now includes 49 base Legion weapons and equipment alongside the 75 Legion-specialised entries. Base items sit above the eighteen-Legion affiliation selector, so they do not need to be duplicated inside every Legion.
+- Militia and Cults (46 named items) and Solar Auxilia (43 named items) now have profiled weapon and equipment trees for every tier that can select their host form, including Lesser Cerabvores.
+- Mechanicum (44 named items) and Sisters of Silence (15 named items) forms and armouries are tier-gated to Moderate, Higher and Legendary Cerabvores and Osseivores.
+- Custodes forms and their 23 named items are tier-gated to Higher and Legendary Cerabvores and Osseivores.
+- Osseivore host-faction selectors now enforce the host grade: Lesser cannot select Astartes, Mechanicum, Sisters or Custodes; Moderate adds Astartes, Mechanicum and Sisters; Higher adds Custodes. Their Militia, Solar Auxilia, Mechanicum, Sisters, Custodes and Astartes branches use the same imported profiles as the Cerabvore armouries.
+- Included/base vehicle components pay the matching chassis uncosted-component value. Options whose printed cost varies by source datasheet remain named source-priced choices, with their source restriction shown on the button.
 
-Revision 5's Cerabvore mobility/Monstrous mutual exclusion, separate Sergeant-style Moderate leader equipment, Legion host armouries, Osseivore source-cost cleanup, exact chassis profiles and Amalgam display cleanup are retained. The v4 modular chassis work and v3 live-statline fix also remain intact.
+Revision 6's gated GMC/Titan weapons, Walking Meat and Hidden Mutant eligibility, live Moderate-leader profile, consolidated Osseivore faction selector and removed legacy vehicle-upgrade sections are retained. All earlier exact chassis, live-statline and Cerabvore mutual-exclusion work also remains intact.
 
 ## Upgrade-button coverage
 
 The source document was converted into separate, incrementable BattleScribe choices instead of combined text-only upgrades:
 
 - 13 unit entries
-- 615 option groups
-- 2854 selectable upgrade entries
+- 611 option groups
+- 4275 selectable upgrade entries
 - 147 host-body selections across eligible profiles
-- 18 HH1 Astartes Legion affiliations, 75 distinct Legion armoury items and 300 profile-level Legion weapon buttons
-- 34 Osseivore host factions and 300 profiled Legion component buttons across the four Osseivore tiers
+- 18 HH1 Astartes Legion affiliations, 49 base Legion items, 75 specialised Legion items and 300 specialised Legion buttons across Cerabvore entries
+- named Militia (46), Solar Auxilia (43), Mechanicum (44), Sisters of Silence (15) and Custodes (23) inventories
+- 34 Osseivore host factions and 225 profiled Legion component buttons across the four Osseivore tiers
 - 4 exact modular Osseivore chassis profiles
 - 99 explicit twin-linked weapon selections
 - 2795 live displayed-profile modifiers (2274 conditional and 521 incrementable)
@@ -65,25 +66,25 @@ The source document was converted into separate, incrementable BattleScribe choi
 
 Per-unit audit:
 
-- Rangda Warleader: 257 selectable upgrade buttons
-- Higher Cerabvore Host: 255 selectable upgrade buttons
-- Moderate Cerabvore Hosts: 221 selectable upgrade buttons
-- Moderate Osseivore Host: 388 selectable upgrade buttons
-- Lesser Cerabvore Hosts: 125 selectable upgrade buttons
-- Lesser Osseivore Host: 371 selectable upgrade buttons
+- Rangda Warleader: 482 selectable upgrade buttons
+- Higher Cerabvore Host: 480 selectable upgrade buttons
+- Moderate Cerabvore Hosts: 422 selectable upgrade buttons
+- Moderate Osseivore Host: 557 selectable upgrade buttons
+- Lesser Cerabvore Hosts: 216 selectable upgrade buttons
+- Lesser Osseivore Host: 236 selectable upgrade buttons
 - Amalgams, Flesh Abominations: 1 selectable upgrade buttons
 - Lesser Amalgams: 0 selectable upgrade buttons
-- Higher Osseivore Host: 409 selectable upgrade buttons
+- Higher Osseivore Host: 619 selectable upgrade buttons
 - Monstrous Osseicerabvore: 99 selectable upgrade buttons
-- Legendary Cerabvore Host: 267 selectable upgrade buttons
-- Legendary Osseivore Host: 418 selectable upgrade buttons
+- Legendary Cerabvore Host: 492 selectable upgrade buttons
+- Legendary Osseivore Host: 628 selectable upgrade buttons
 - Oblivion Parasite: 43 selectable upgrade buttons
 
 ## Source gaps retained honestly
 
-The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. The eighteen Astartes Legions have explicit imported profiles. The chassis document permits components from many other external vehicle datasheets but does not enumerate their individual profiles, so those factions use nested source-priced and uncosted-component choices beneath their selected faction. Tier access and hardpoints remain enforced without reintroducing manual point-increment buttons.
+The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence and Custodes now have explicit imported profiles. Other external factions still use nested source-priced and uncosted-component choices because the chassis document does not enumerate their individual profiles. Tier access and hardpoints remain enforced without reintroducing manual point-increment buttons.
 
 Catalogue ID: `069890da-d908-533f-9a7b-8ba24b3e3773`  
-Catalogue revision: `6`  
-`Rangdan_Confederacy_HH1.catz` SHA-256: `612c31b6450013b10a2da8084ef91e8b105ab5bbe5f966e2073ccaf716a3d2ac`  
-`index.bsi` SHA-256: `9f325bf302eb70a255e36cf7b87265c63778f2ae03efaf5fa4c3474b8ed5cd5d`
+Catalogue revision: `7`  
+`Rangdan_Confederacy_HH1.catz` SHA-256: `b4c7bef8a32afd65b29e81254aa18222e63025fffbb7e9e7beb2f70aab1c39c0`  
+`index.bsi` SHA-256: `013c6391de01891352202a6d926d28c5c7c3262616bc1dc8caa62486b21c0739`
