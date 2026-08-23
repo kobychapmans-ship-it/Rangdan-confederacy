@@ -24,7 +24,14 @@ The catalogue targets HH v1 game-system revision 165, matching the standalone Zu
 
 Archived HH1 armoury data source: `https://github.com/BSData/horus-heresy-1st-edition` at commit `0a4c10da15f4ea40eea0932090fadafe3b90b696`.
 
-## Revision 8 — requested next-version update
+## Revision 9 — Monstrous Osseicerabvore host catalogue
+
+- Added 38 selectable forms derived from all 37 printed non-Unique host entries supplied in the Monstrous Osseicerabvore catalogue. The separate upgraded Arch-Daemon button accounts for the extra selection. Coverage includes Mechanicum, Legiones Astartes, Solar Auxilia, Questoris support, Daemons of the Ruinstorm, legacy 7th-edition Chaos Daemons, Craftworld and Necron compatibility sources.
+- Each selection adds the printed host cost per model and replaces the live Unit Type, WS, BS, S, T, W, I, A, Ld and Save fields instead of appending a second statblock.
+- The 4 Gargantuan choices are hidden until **Gargantuan Monstrous Host** is selected. The upgraded Arch-Daemon is represented at its full 700-point source cost, with the separate Rangdan +75-point Gargantuan surcharge retained.
+- Named characters, Unique models, Walkers, Vehicles, Infantry, Beasts, Cavalry and Primarchs remain excluded. Source-faction, allegiance, Rite of War and campaign-tier restrictions remain visible on their applicable choices.
+
+### Revision 8 update retained
 
 - **Walking Meat** is present on all eight eligible Rangdan entries. On units that can add models, BattleScribe now hides the option and sets its maximum to zero whenever the unit contains two or more models; reducing the unit to exactly one model makes it available again.
 - All 193 formerly source-dependent Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence and Custodes entries now have fixed BattleScribe prices. The generator uses the most common positive archived HH1 upgrade cost, choosing the lower value on a tied mode. Items only included as base wargear remain 0 points for Cerabvores and use the chassis fallback price for Osseivores.
@@ -48,15 +55,15 @@ Revision 6's gated GMC/Titan weapons, Hidden Mutant eligibility, live Moderate-l
 The source document was converted into separate, incrementable BattleScribe choices instead of combined text-only upgrades:
 
 - 13 unit entries
-- 610 option groups
-- 4278 selectable upgrade entries
+- 611 option groups
+- 4316 selectable upgrade entries
 - 147 host-body selections across eligible profiles
 - 18 HH1 Astartes Legion affiliations, 49 base Legion items, 75 specialised Legion items and 300 specialised Legion buttons across Cerabvore entries
 - named Militia (46), Solar Auxilia (43), Mechanicum (44), Sisters of Silence (15) and Custodes (23) inventories
 - 34 Osseivore host factions and 225 profiled Legion component buttons across the four Osseivore tiers
 - 4 exact modular Osseivore chassis profiles
 - 99 explicit twin-linked weapon selections
-- 2795 live displayed-profile modifiers (2274 conditional and 521 incrementable)
+- 3175 live displayed-profile modifiers (2654 conditional and 521 incrementable)
 - 230 zero-cost manual +/- stat buttons and 319 manual Save overrides
 - individual buttons for Strength, Toughness, Weapon Skill, Ballistic Skill, Wounds, Initiative, saves and Mastery Levels where eligible
 - explicit groups for natural weapons, Rangdan weapons, specialist/heavy allowances, eligible non-Osseivore armour and mounts, unique equipment, mutations, external vehicle hosts, faction-gated modular chassis components, Osseivore modifications and Osseivore upgrades
@@ -83,7 +90,7 @@ Per-unit audit:
 - Amalgams, Flesh Abominations: 1 selectable upgrade buttons
 - Lesser Amalgams: 0 selectable upgrade buttons
 - Higher Osseivore Host: 618 selectable upgrade buttons
-- Monstrous Osseicerabvore: 100 selectable upgrade buttons
+- Monstrous Osseicerabvore: 138 selectable upgrade buttons
 - Legendary Cerabvore Host: 492 selectable upgrade buttons
 - Legendary Osseivore Host: 628 selectable upgrade buttons
 - Oblivion Parasite: 43 selectable upgrade buttons
@@ -93,6 +100,6 @@ Per-unit audit:
 The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence and Custodes have explicit imported profiles and fixed prices. Because the chassis document does not enumerate individual profiles for the other external factions, those branches use fixed tier-appropriate component fallback prices. Tier access and hardpoints remain enforced without manual point-increment buttons.
 
 Catalogue ID: `069890da-d908-533f-9a7b-8ba24b3e3773`  
-Catalogue revision: `8`  
-`Rangdan_Confederacy_HH1.catz` SHA-256: `d2641c2c952298dfe21d73469a738381c694a676f4025a651f17933c8fe89664`  
-`index.bsi` SHA-256: `8e78a2a2a11a5e2fba1e716ebbafbe65ebe217e33ae5c95f2be5db581e4eda31`
+Catalogue revision: `9`  
+`Rangdan_Confederacy_HH1.catz` SHA-256: `c6ed9731a5adf8e1ae71840f498506b6c1552f8420fe4664dd971a45110b4466`  
+`index.bsi` SHA-256: `57cb5b00c9823f25c8222f73d7444f578cfcd0d02a9146e6eb0a79622d7e7b57`
