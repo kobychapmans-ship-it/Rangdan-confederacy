@@ -24,7 +24,15 @@ The catalogue targets HH v1 game-system revision 165, matching the standalone Zu
 
 Archived HH1 armoury data source: `https://github.com/BSData/horus-heresy-1st-edition` at commit `0a4c10da15f4ea40eea0932090fadafe3b90b696`.
 
-## Revision 9 — Monstrous Osseicerabvore host catalogue
+## Revision 10 — Rangdan xenos host-faction armouries
+
+- **Slaugth** host bodies and vehicle facsimiles now expose 37 named weapons and equipment choices from the supplied Slaugth Intendant faction insert, including Necrotic and Parepleth sceptres, Husk weapons, Slaugth relics, Voidling weapons, Rad weapons, drone components, Shoggoth weapons and fixed-cost upgrades.
+- **Barasonilash** now expose their 2 supplied items: the Flechette Burster Pistol Bandolier and Crown of Mental Dispersion.
+- **Baalite / Fire Scorpion** now expose their 2 supplied natural weapons: Igneous Claws and the Flameblood Stinger.
+- **Cythor Fiends** now expose all 4 supplied choices: Stare of Stone, Scything Talons, Crystalline Scythe Matrix and Toiphoid Assistance Nanobots.
+- These four armouries use the same structure as the existing Imperial factions: selecting the matching Cerabvore Host Body reveals its weapon/equipment branch, while selecting the matching Osseivore Host Faction reveals profiled chassis components. Printed upgrade prices are fixed; included/base items use 0 points on Cerabvores and the existing tier chassis component value on Osseivores.
+
+### Revision 9 Monstrous Osseicerabvore update retained
 
 - Added 38 selectable forms derived from all 37 printed non-Unique host entries supplied in the Monstrous Osseicerabvore catalogue. The separate upgraded Arch-Daemon button accounts for the extra selection. Coverage includes Mechanicum, Legiones Astartes, Solar Auxilia, Questoris support, Daemons of the Ruinstorm, legacy 7th-edition Chaos Daemons, Craftworld and Necron compatibility sources.
 - Each selection adds the printed host cost per model and replaces the live Unit Type, WS, BS, S, T, W, I, A, Ld and Save fields instead of appending a second statblock.
@@ -55,11 +63,11 @@ Revision 6's gated GMC/Titan weapons, Hidden Mutant eligibility, live Moderate-l
 The source document was converted into separate, incrementable BattleScribe choices instead of combined text-only upgrades:
 
 - 13 unit entries
-- 611 option groups
-- 4316 selectable upgrade entries
+- 639 option groups
+- 4543 selectable upgrade entries
 - 147 host-body selections across eligible profiles
 - 18 HH1 Astartes Legion affiliations, 49 base Legion items, 75 specialised Legion items and 300 specialised Legion buttons across Cerabvore entries
-- named Militia (46), Solar Auxilia (43), Mechanicum (44), Sisters of Silence (15) and Custodes (23) inventories
+- named Militia (46), Solar Auxilia (43), Mechanicum (44), Sisters of Silence (15), Custodes (23), Slaugth (37), Barasonilash (2), Baalite / Fire Scorpion (2) and Cythor Fiends (4) inventories
 - 34 Osseivore host factions and 225 profiled Legion component buttons across the four Osseivore tiers
 - 4 exact modular Osseivore chassis profiles
 - 99 explicit twin-linked weapon selections
@@ -81,25 +89,25 @@ The source document was converted into separate, incrementable BattleScribe choi
 
 Per-unit audit:
 
-- Rangda Warleader: 482 selectable upgrade buttons
-- Higher Cerabvore Host: 481 selectable upgrade buttons
-- Moderate Cerabvore Hosts: 423 selectable upgrade buttons
+- Rangda Warleader: 531 selectable upgrade buttons
+- Higher Cerabvore Host: 530 selectable upgrade buttons
+- Moderate Cerabvore Hosts: 429 selectable upgrade buttons
 - Moderate Osseivore Host: 558 selectable upgrade buttons
 - Lesser Cerabvore Hosts: 216 selectable upgrade buttons
 - Lesser Osseivore Host: 236 selectable upgrade buttons
 - Amalgams, Flesh Abominations: 1 selectable upgrade buttons
 - Lesser Amalgams: 0 selectable upgrade buttons
-- Higher Osseivore Host: 618 selectable upgrade buttons
+- Higher Osseivore Host: 655 selectable upgrade buttons
 - Monstrous Osseicerabvore: 138 selectable upgrade buttons
-- Legendary Cerabvore Host: 492 selectable upgrade buttons
-- Legendary Osseivore Host: 628 selectable upgrade buttons
+- Legendary Cerabvore Host: 541 selectable upgrade buttons
+- Legendary Osseivore Host: 665 selectable upgrade buttons
 - Oblivion Parasite: 43 selectable upgrade buttons
 
 ## Source gaps retained honestly
 
-The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence and Custodes have explicit imported profiles and fixed prices. Because the chassis document does not enumerate individual profiles for the other external factions, those branches use fixed tier-appropriate component fallback prices. Tier access and hardpoints remain enforced without manual point-increment buttons.
+The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence, Custodes, Slaugth, Barasonilash, Baalite / Fire Scorpion and Cythor Fiends now have explicit profiled inventories and fixed prices. Because the source documents do not enumerate individual profiles for the remaining external factions, those branches use fixed tier-appropriate component fallback prices. Tier access and hardpoints remain enforced without manual point-increment buttons.
 
 Catalogue ID: `069890da-d908-533f-9a7b-8ba24b3e3773`  
-Catalogue revision: `9`  
-`Rangdan_Confederacy_HH1.catz` SHA-256: `c6ed9731a5adf8e1ae71840f498506b6c1552f8420fe4664dd971a45110b4466`  
-`index.bsi` SHA-256: `57cb5b00c9823f25c8222f73d7444f578cfcd0d02a9146e6eb0a79622d7e7b57`
+Catalogue revision: `10`  
+`Rangdan_Confederacy_HH1.catz` SHA-256: `b71d8fe812cb0c0d31789cdbd6aa73aef4c246ee1c09f2341e8acdd28edf2572`  
+`index.bsi` SHA-256: `9d60aa90d84fd3f3c1d4bde302ecd4331525abd477849954ddc7cad0e2bdf75b`
