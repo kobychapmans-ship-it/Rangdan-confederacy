@@ -26,11 +26,19 @@ Archived HH1 armoury data source: `https://github.com/BSData/horus-heresy-1st-ed
 
 Archived 7th-edition Harlequin data source: `https://github.com/BSData/wh40k-7th-edition` at commit `6fd52df8ad613b98b34c635cc6d8011bc312f2e7`.
 
-## Revision 11 — Harlequin host forms and armoury
+## Revision 12 — six Great Crusade xenos armouries
 
-- Added 8 tier-gated Harlequin host roles: Player, Troupe Master, Skyweaver, Helion Sky Jester, Death Jester, Shadowseer, Solitaire and Playwright. Their role deltas modify the existing Cerabvore profile row and their costs are charged per model over the base 15-point Player represented by the Harlequin Host Body.
+- Removed all eight Harlequin role/sub-form selectors. **Harlequins Host Body** is again the single standard Harlequin body choice, exactly as in the original Rangdan host list.
+- Added explicit **Laer** (22 items), **Storm Scions** (12), **Nephilim** (41), **Megarachnids** (16), **Nurthene** (23) and **Olamic Quietude** (23) armouries.
+- Every available racial weapon has a BattleScribe weapon profile. Armour, artefacts, biological adaptations, command equipment and other non-weapon upgrades have fixed prices and rules descriptions.
+- Where the same item has different printed prices for different source units, separate labelled buttons preserve those costs instead of collapsing them into one estimate.
+- The same six inventories are available through the matching Osseivore Host Faction branches, with included components using the chassis fallback price and purchased upgrades retaining their printed cost.
+- Generic Imperial equipment mentioned by the Nephilim list is included only where a profile or cost was supplied; externally referenced Crusade Imperialis datasheets remain cross-references and were not invented.
+
+## Revision 11 — Harlequin armoury retained
+
 - Added 45 Harlequin weapons and equipment choices across the 7th-edition base armoury and the supplied additions, including 17 custom revision 11 items.
-- The Harlequin Host Body now displays its Holo-suit 5++ save alongside the Cerabvore host's armour save.
+- The single standard Harlequin Host Body displays its Holo-suit 5++ save alongside the Cerabvore host's armour save.
 - The matching Harlequin Host Faction branch is available to Moderate, Higher and Legendary Osseivore vehicle forms, using the same profiled component and fixed-cost structure as the Imperial host factions.
 - Incomplete supplied entries are preserved honestly: Riveblades and the Blind-Barrage Launcher are selectable markers with their supplied costs where present, but no invented profile was added.
 
@@ -73,15 +81,15 @@ Revision 6's gated GMC/Titan weapons, Hidden Mutant eligibility, live Moderate-l
 The source document was converted into separate, incrementable BattleScribe choices instead of combined text-only upgrades:
 
 - 13 unit entries
-- 651 option groups
-- 4882 selectable upgrade entries
+- 703 option groups
+- 5947 selectable upgrade entries
 - 147 host-body selections across eligible profiles
 - 18 HH1 Astartes Legion affiliations, 49 base Legion items, 75 specialised Legion items and 300 specialised Legion buttons across Cerabvore entries
-- named Militia (46), Solar Auxilia (43), Mechanicum (44), Sisters of Silence (15), Custodes (23), Harlequins (45), Slaugth (37), Barasonilash (2), Baalite / Fire Scorpion (2) and Cythor Fiends (4) inventories
+- named Militia (46), Solar Auxilia (43), Mechanicum (44), Sisters of Silence (15), Custodes (23), Harlequins (45), Laer (22), Storm Scions (12), Nephilim (41), Megarachnids (16), Nurthene (23), Olamic Quietude (23), Slaugth (37), Barasonilash (2), Baalite / Fire Scorpion (2) and Cythor Fiends (4) inventories
 - 34 Osseivore host factions and 225 profiled Legion component buttons across the four Osseivore tiers
 - 4 exact modular Osseivore chassis profiles
 - 99 explicit twin-linked weapon selections
-- 3289 live displayed-profile modifiers (2768 conditional and 521 incrementable)
+- 3175 live displayed-profile modifiers (2654 conditional and 521 incrementable)
 - 230 zero-cost manual +/- stat buttons and 319 manual Save overrides
 - individual buttons for Strength, Toughness, Weapon Skill, Ballistic Skill, Wounds, Initiative, saves and Mastery Levels where eligible
 - explicit groups for natural weapons, Rangdan weapons, specialist/heavy allowances, eligible non-Osseivore armour and mounts, unique equipment, mutations, external vehicle hosts, faction-gated modular chassis components, Osseivore modifications and Osseivore upgrades
@@ -99,25 +107,25 @@ The source document was converted into separate, incrementable BattleScribe choi
 
 Per-unit audit:
 
-- Rangda Warleader: 585 selectable upgrade buttons
-- Higher Cerabvore Host: 582 selectable upgrade buttons
-- Moderate Cerabvore Hosts: 479 selectable upgrade buttons
-- Moderate Osseivore Host: 601 selectable upgrade buttons
-- Lesser Cerabvore Hosts: 216 selectable upgrade buttons
-- Lesser Osseivore Host: 236 selectable upgrade buttons
+- Rangda Warleader: 720 selectable upgrade buttons
+- Higher Cerabvore Host: 719 selectable upgrade buttons
+- Moderate Cerabvore Hosts: 618 selectable upgrade buttons
+- Moderate Osseivore Host: 726 selectable upgrade buttons
+- Lesser Cerabvore Hosts: 294 selectable upgrade buttons
+- Lesser Osseivore Host: 302 selectable upgrade buttons
 - Amalgams, Flesh Abominations: 1 selectable upgrade buttons
 - Lesser Amalgams: 0 selectable upgrade buttons
-- Higher Osseivore Host: 698 selectable upgrade buttons
+- Higher Osseivore Host: 823 selectable upgrade buttons
 - Monstrous Osseicerabvore: 138 selectable upgrade buttons
-- Legendary Cerabvore Host: 595 selectable upgrade buttons
-- Legendary Osseivore Host: 708 selectable upgrade buttons
+- Legendary Cerabvore Host: 730 selectable upgrade buttons
+- Legendary Osseivore Host: 833 selectable upgrade buttons
 - Oblivion Parasite: 43 selectable upgrade buttons
 
 ## Source gaps retained honestly
 
-The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence, Custodes, Slaugth, Barasonilash, Baalite / Fire Scorpion and Cythor Fiends now have explicit profiled inventories and fixed prices. Because the source documents do not enumerate individual profiles for the remaining external factions, those branches use fixed tier-appropriate component fallback prices. Tier access and hardpoints remain enforced without manual point-increment buttons.
+The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence, Custodes, Harlequins, Laer, Storm Scions, Nephilim, Megarachnids, Nurthene, Olamic Quietude, Slaugth, Barasonilash, Baalite / Fire Scorpion and Cythor Fiends now have explicit profiled inventories and fixed prices. Remaining unexpanded external factions use fixed tier-appropriate component fallback prices. Tier access and hardpoints remain enforced without manual point-increment buttons.
 
 Catalogue ID: `069890da-d908-533f-9a7b-8ba24b3e3773`  
-Catalogue revision: `11`  
-`Rangdan_Confederacy_HH1.catz` SHA-256: `8dbceb1fa8f01cb1adb5c2ec6fd9ff9fe9284db8f6b8adf3e70dca8d28fb5e0c`  
-`index.bsi` SHA-256: `1f3302f72f71c8d32ab45fcb84f254ffa597e39fa66d3ab3fdff762b8324b771`
+Catalogue revision: `12`  
+`Rangdan_Confederacy_HH1.catz` SHA-256: `4f26c6306f0daf5376ee486f1eecf9af5a7cec516f7956abed80ad091c47d026`  
+`index.bsi` SHA-256: `aec9050b134a2c80baff3353e0abfda2b62430ab9d155f8ae87f74ace15c007e`
