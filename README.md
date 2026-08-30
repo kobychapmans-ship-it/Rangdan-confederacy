@@ -28,6 +28,16 @@ Archived 7th-edition Harlequin data source: `https://github.com/BSData/wh40k-7th
 
 
 
+
+## Revision 16 — 7th Edition Aeldari host armouries
+
+- Expanded the existing **Craftworld Aeldari**, **Dark Eldar** and **Corsairs** host-body selectors; no duplicate host forms were created.
+- Imported 184 Craftworld, 116 Dark Eldar and 116 Corsair priced equipment/weapon variants from the archived BSData 7th Edition repository at commit `6fd52df8ad613b98b34c635cc6d8011bc312f2e7`.
+- Preserved every linked weapon mode, equipment description and directly linked option rule available in the source catalogues.
+- Every vehicle-only choice is marked **[Vehicle Weapon]** or **[Vehicle Equipment]** in its option and profile names.
+- Osseivore host-faction branches expose only those explicitly vehicle-tagged choices; personal infantry, character and relic equipment is excluded from Osseivore chassis.
+- Existing tier gates remain unchanged: the three factions are available to Moderate, Higher and Legendary Cerabvores/Osseivores, plus the Rangda Warleader where its existing host-body selector permits them.
+
 ## Revision 15 — BattleScribe loading compatibility fix
 
 - Restored the catalogue schema as BattleScribe's default XML namespace instead of the standards-valid but client-incompatible `ns0:` prefix generated in the first revision 14 package.
@@ -107,8 +117,8 @@ Revision 6's gated GMC/Titan weapons, Hidden Mutant eligibility, live Moderate-l
 The source document was converted into separate, incrementable BattleScribe choices instead of combined text-only upgrades:
 
 - 13 unit entries
-- 785 option groups
-- 6950 selectable upgrade entries
+- 809 option groups
+- 9016 selectable upgrade entries
 - 147 host-body selections across eligible profiles
 - 18 HH1 Astartes Legion affiliations, 49 base Legion items, 75 specialised Legion items and 300 specialised Legion buttons across Cerabvore entries
 - Book Three Greater Orks (75), Agents of the Imperium (109), Agents of the Void (39), named Militia (46), Solar Auxilia (43), Mechanicum (44), Sisters of Silence (15), Custodes (23), Harlequins (45), Laer (22), Storm Scions (12), Nephilim (41), Megarachnids (16), Nurthene (23), Olamic Quietude (23), Exodites (57), Demiurg (27), Interex (29), Keylekid (26), Hrud (25), Jorgall (28), Slaugth (37), Barasonilash (2), Baalite / Fire Scorpion (2) and Cythor Fiends (4) inventories
@@ -133,18 +143,18 @@ The source document was converted into separate, incrementable BattleScribe choi
 
 Per-unit audit:
 
-- Rangda Warleader: 1144 selectable upgrade buttons
-- Higher Cerabvore Host: 1143 selectable upgrade buttons
-- Moderate Cerabvore Hosts: 1002 selectable upgrade buttons
-- Moderate Osseivore Host: 467 selectable upgrade buttons
+- Rangda Warleader: 1563 selectable upgrade buttons
+- Higher Cerabvore Host: 1562 selectable upgrade buttons
+- Moderate Cerabvore Hosts: 1421 selectable upgrade buttons
+- Moderate Osseivore Host: 597 selectable upgrade buttons
 - Lesser Cerabvore Hosts: 593 selectable upgrade buttons
 - Lesser Osseivore Host: 241 selectable upgrade buttons
 - Amalgams, Flesh Abominations: 1 selectable upgrade buttons
 - Lesser Amalgams: 0 selectable upgrade buttons
-- Higher Osseivore Host: 507 selectable upgrade buttons
+- Higher Osseivore Host: 637 selectable upgrade buttons
 - Monstrous Osseicerabvore: 138 selectable upgrade buttons
-- Legendary Cerabvore Host: 1154 selectable upgrade buttons
-- Legendary Osseivore Host: 517 selectable upgrade buttons
+- Legendary Cerabvore Host: 1573 selectable upgrade buttons
+- Legendary Osseivore Host: 647 selectable upgrade buttons
 - Oblivion Parasite: 43 selectable upgrade buttons
 
 ## Source gaps retained honestly
@@ -152,6 +162,6 @@ Per-unit audit:
 The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence, Custodes, Harlequins, Laer, Storm Scions, Nephilim, Megarachnids, Nurthene, Olamic Quietude, Exodites, Demiurg, Interex, Keylekid, Hrud, Jorgall, Slaugth, Barasonilash, Baalite / Fire Scorpion and Cythor Fiends, Greater Orks, Agents of the Imperium and Agents of the Void now have explicit profiled inventories and fixed prices. Remaining unexpanded external factions use fixed tier-appropriate vehicle-component fallback prices. Tier access and hardpoints remain enforced without manual point-increment buttons.
 
 Catalogue ID: `069890da-d908-533f-9a7b-8ba24b3e3773`  
-Catalogue revision: `15`  
-`Rangdan_Confederacy_HH1.catz` SHA-256: `02eff985627292d0f7b5d75ed88fe63af903520f07e18b5ae37d68c6641d85a6`  
-`index.bsi` SHA-256: `5716e71a7ddf5069dee98132c1e3c3ded4fab4894943c510c819814dc0d80914`
+Catalogue revision: `16`  
+`Rangdan_Confederacy_HH1.catz` SHA-256: `87c5bd46185256b0bc28befca32efc77294a1ad0bad2bae55feb8c0998c1eb45`  
+`index.bsi` SHA-256: `9ca58debdf3005c8943217dc3bdee4b954b5342add54b052cf77d01c138ee08b`
