@@ -27,6 +27,13 @@ Archived HH1 armoury data source: `https://github.com/BSData/horus-heresy-1st-ed
 Archived 7th-edition Harlequin data source: `https://github.com/BSData/wh40k-7th-edition` at commit `6fd52df8ad613b98b34c635cc6d8011bc312f2e7`.
 
 
+
+## Revision 15 — BattleScribe loading compatibility fix
+
+- Restored the catalogue schema as BattleScribe's default XML namespace instead of the standards-valid but client-incompatible `ns0:` prefix generated in the first revision 14 package.
+- Promoted the corrected build to revision 15 so BattleScribe detects and downloads it instead of retaining a cached broken revision 14 catalogue.
+- No revision 14 army rules, costs, profiles, tier gates or vehicle filters were changed by this compatibility rebuild.
+
 ## Revision 14 — Book Three factions and tagged vehicle components
 
 - Added the **Greater Orks** armoury (75 entries) to the existing Greater Orks Host Body; no duplicate Ork host form was created.
@@ -145,6 +152,6 @@ Per-unit audit:
 The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence, Custodes, Harlequins, Laer, Storm Scions, Nephilim, Megarachnids, Nurthene, Olamic Quietude, Exodites, Demiurg, Interex, Keylekid, Hrud, Jorgall, Slaugth, Barasonilash, Baalite / Fire Scorpion and Cythor Fiends, Greater Orks, Agents of the Imperium and Agents of the Void now have explicit profiled inventories and fixed prices. Remaining unexpanded external factions use fixed tier-appropriate vehicle-component fallback prices. Tier access and hardpoints remain enforced without manual point-increment buttons.
 
 Catalogue ID: `069890da-d908-533f-9a7b-8ba24b3e3773`  
-Catalogue revision: `14`  
-`Rangdan_Confederacy_HH1.catz` SHA-256: `5c5baae0b9ef02398ad42a4476b8c20fc921e2f56faafb8acdf1f243d60ba49e`  
-`index.bsi` SHA-256: `aaaf7ee1e3e4c6e80100d130db5449dc5fe21ec718d3477e2562f9c9da2958fe`
+Catalogue revision: `15`  
+`Rangdan_Confederacy_HH1.catz` SHA-256: `02eff985627292d0f7b5d75ed88fe63af903520f07e18b5ae37d68c6641d85a6`  
+`index.bsi` SHA-256: `5716e71a7ddf5069dee98132c1e3c3ded4fab4894943c510c819814dc0d80914`
