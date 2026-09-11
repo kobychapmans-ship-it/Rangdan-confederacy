@@ -29,6 +29,21 @@ Archived 7th-edition Harlequin data source: `https://github.com/BSData/wh40k-7th
 
 
 
+## Revision 19 — Repository host-rule definitions
+
+- Imported matched racial host rules from Xenos of the Great Crusade revision 5 (commit f70e26f6), the archived HH1 repository, and matching 7th Edition faction catalogues.
+- Every imported racial rule is linked only from its matching host-body selection. Changing bodies changes those rule links; unselected bodies grant nothing. Osseivore faction selection does not grant infantry host-body rules.
+- Preserved all costs, constraints, modifiers and profiles. XML links, unique IDs, archive integrity and body-specific rule ownership passed checks; the phone app was not available for a rendering test.
+- Some repositories still only list or omit definitions. These remain explicit unresolved grants:
+
+- Anrathe Aeldarii: A Doomed Race, Anrathe
+- Baalite / Fire Scorpion: Ferromous Aura
+- Barasonilash: Natural Divinist, Psionic Foci, Seer's Prescience
+- Cythor Fiends: Dematerialise, Relic Nimbleness
+- Demiurg: All in a Day, Knock It Down
+- Khrave: Hive Mind
+- Shae'Lait: Epitome of Excess, Mark/Daemon of Slaanesh, Seduction's Explicit Touch, The Six-fold Path
+
 ## Revision 18 — Original document audit and selected rules
 
 - Compared all 19 Unit statlines and 13 core unit per-model costs with Rangdan confederacy(1).docx.
@@ -180,4 +195,4 @@ Per-unit audit:
 The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence, Custodes, Harlequins, Laer, Storm Scions, Nephilim, Megarachnids, Nurthene, Olamic Quietude, Exodites, Demiurg, Interex, Keylekid, Hrud, Jorgall, Slaugth, Barasonilash, Baalite / Fire Scorpion and Cythor Fiends, Greater Orks, Agents of the Imperium and Agents of the Void now have explicit profiled inventories and fixed prices. Remaining unexpanded external factions use fixed tier-appropriate vehicle-component fallback prices. Tier access and hardpoints remain enforced without manual point-increment buttons.
 
 Catalogue ID: `069890da-d908-533f-9a7b-8ba24b3e3773`  
-Catalogue revision: `18`  
+Catalogue revision: `19`  
