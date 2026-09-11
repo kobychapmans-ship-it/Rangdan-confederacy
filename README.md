@@ -29,6 +29,15 @@ Archived 7th-edition Harlequin data source: `https://github.com/BSData/wh40k-7th
 
 
 
+## Revision 18 — Original document audit and selected rules
+
+- Compared all 19 Unit statlines and 13 core unit per-model costs with Rangdan confederacy(1).docx.
+- Full selected wargear effects and resolvable weapon/host special rules now appear as rule links on the owning selection. Unselected optional equipment does not grant its rules.
+- Restored abbreviated Walking Meat, Oblivion Anathema, spawn and custom weapon effects. Corrected Lesser/Moderate Acidic Bite so it does not inherit Higher-only Psy-lash.
+- Retained the later user-approved chassis, eligibility, faction armoury and vehicle-only changes.
+- The source does not define Collective Mind or the amount of Oblivion Anathema's Leadership penalty. These remain explicit source questions rather than invented rules. Some faction-specific terms also require their faction sources where no definition is present in the retained catalogues.
+- Source-access/pricing notes remain Wargear reference profiles. Costs and stat modifiers pass regression checks; phone-app rendering has not been tested.
+
 ## Revision 17 — HH1-style upgrade and rules formatting
 
 - Concise upgrade and wargear names; redundant unit, faction and import-source prefixes removed.
@@ -171,4 +180,4 @@ Per-unit audit:
 The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence, Custodes, Harlequins, Laer, Storm Scions, Nephilim, Megarachnids, Nurthene, Olamic Quietude, Exodites, Demiurg, Interex, Keylekid, Hrud, Jorgall, Slaugth, Barasonilash, Baalite / Fire Scorpion and Cythor Fiends, Greater Orks, Agents of the Imperium and Agents of the Void now have explicit profiled inventories and fixed prices. Remaining unexpanded external factions use fixed tier-appropriate vehicle-component fallback prices. Tier access and hardpoints remain enforced without manual point-increment buttons.
 
 Catalogue ID: `069890da-d908-533f-9a7b-8ba24b3e3773`  
-Catalogue revision: `17`  
+Catalogue revision: `18`  
