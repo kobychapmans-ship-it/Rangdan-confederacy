@@ -29,6 +29,15 @@ Archived 7th-edition Harlequin data source: `https://github.com/BSData/wh40k-7th
 
 
 
+## Revision 17 — HH1-style upgrade and rules formatting
+
+- Concise upgrade and wargear names; redundant unit, faction and import-source prefixes removed.
+- 6334 source-access and stat-upgrade notes moved from Selection Rules to Wargear Item description profiles, preserving their full restrictions and costs text.
+- Genuine special rules remain rules; weapons remain Weapon profiles with Range, Strength, AP and Type columns.
+- Vehicle-only tags remain visible on options and profiles. Option groups, model limits, tier gates, costs and live statline modifiers are unchanged.
+- Formatting reference: BSData/horus-heresy-1st-edition, including the Legiones Astartes catalogue. BattleScribe controls fonts and roster page styling; this revision changes catalogue labels and data presentation.
+- Regression checks passed for all IDs, links, costs, constraints, modifiers, condition trees and existing profile values. No on-device BattleScribe test was available.
+
 ## Revision 16 — 7th Edition Aeldari host armouries
 
 - Expanded the existing **Craftworld Aeldari**, **Dark Eldar** and **Corsairs** host-body selectors; no duplicate host forms were created.
@@ -162,6 +171,4 @@ Per-unit audit:
 The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence, Custodes, Harlequins, Laer, Storm Scions, Nephilim, Megarachnids, Nurthene, Olamic Quietude, Exodites, Demiurg, Interex, Keylekid, Hrud, Jorgall, Slaugth, Barasonilash, Baalite / Fire Scorpion and Cythor Fiends, Greater Orks, Agents of the Imperium and Agents of the Void now have explicit profiled inventories and fixed prices. Remaining unexpanded external factions use fixed tier-appropriate vehicle-component fallback prices. Tier access and hardpoints remain enforced without manual point-increment buttons.
 
 Catalogue ID: `069890da-d908-533f-9a7b-8ba24b3e3773`  
-Catalogue revision: `16`  
-`Rangdan_Confederacy_HH1.catz` SHA-256: `87c5bd46185256b0bc28befca32efc77294a1ad0bad2bae55feb8c0998c1eb45`  
-`index.bsi` SHA-256: `9ca58debdf3005c8943217dc3bdee4b954b5342add54b052cf77d01c138ee08b`
+Catalogue revision: `17`  
