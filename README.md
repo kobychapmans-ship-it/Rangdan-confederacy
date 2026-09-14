@@ -29,6 +29,14 @@ Archived 7th-edition Harlequin data source: `https://github.com/BSData/wh40k-7th
 
 
 
+## Revision 21 — Walking Meat and Gargantuan armament
+
+- Removed all 30 Tau/Tyranid printed host choices, including winged variants; other bodies retained.
+- Each Walking Meat option now contains an optional Inducted Levy Squad: 19–49 Levy Auxiliaries plus one Custodian, 40–100 points before upgrades. Includes source weapon swaps, Custodian equipment, frag grenades, vexilla and discipline collars. Walking Meat remains +20 points separately. Army Provenances and Zone Mortalis variants are not granted.
+- Soul Syphon (Walking Meat) is linked from Walking Meat and therefore displays only when selected; imported the Book One survival rule, not the unrelated Olamic attack.
+- Gargantuan Osseicerabvores gain the six Legendary Titan-class Rangdan weapons at the same prices/profiles. Maximum two weapons per host model, locked unless Gargantuan Monstrous Host is selected.
+- XML references, archive integrity, Levy base costs and preserved single-host eligibility checked. No on-device BattleScribe rendering test.
+
 ## Revision 20 — Expanded Monstrous Osseicerabvore hosts
 
 - Preserved 38 existing host forms; added 44 source bodies/flight variants and a modular body with four mutually exclusive types. Named/Unique creatures and walkers are excluded.
@@ -205,4 +213,4 @@ Per-unit audit:
 The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence, Custodes, Harlequins, Laer, Storm Scions, Nephilim, Megarachnids, Nurthene, Olamic Quietude, Exodites, Demiurg, Interex, Keylekid, Hrud, Jorgall, Slaugth, Barasonilash, Baalite / Fire Scorpion and Cythor Fiends, Greater Orks, Agents of the Imperium and Agents of the Void now have explicit profiled inventories and fixed prices. Remaining unexpanded external factions use fixed tier-appropriate vehicle-component fallback prices. Tier access and hardpoints remain enforced without manual point-increment buttons.
 
 Catalogue ID: `069890da-d908-533f-9a7b-8ba24b3e3773`  
-Catalogue revision: `20`  
+Catalogue revision: `21`  
