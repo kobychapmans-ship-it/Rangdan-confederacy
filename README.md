@@ -29,6 +29,16 @@ Archived 7th-edition Harlequin data source: `https://github.com/BSData/wh40k-7th
 
 
 
+## Revision 20 — Expanded Monstrous Osseicerabvore hosts
+
+- Preserved 38 existing host forms; added 44 source bodies/flight variants and a modular body with four mutually exclusive types. Named/Unique creatures and walkers are excluded.
+- Source costs and statlines come from the archived HH1 and 7e repositories. Corrected the source Gargantuan Squiggoth type cell to enforce the Gargantuan prerequisite. Direct source rules and resolvable mandatory equipment are attached only to their chosen forms. Optional source loadouts are not comprehensively imported in this release.
+- Unassigned faction grades still require a campaign eligibility ruling, as in the earlier forms release.
+- Custom body costs per model: Ground 100, Flying 130, Gargantuan 240, Flying Gargantuan 290. Add the parasite 75; Gargantuan types also add the existing prerequisite 75. These are homebrew combinations of the 40-point Moderate body and existing adaptation tariffs, not official creature costs.
+- Custom final stats: WS4 BS4 S7 T7 W4 I4 A3 LD8 4+/4++ for ordinary types; S9 T9 W6 for Gargantuan types. Strengthening and armour apply afterward.
+- All new forms are unit-wide, cost per model, and change the existing model row. Both Gargantuan forms and custom Gargantuan types are hidden and invalid without the prerequisite.
+- XML references, modifier ordering, form exclusivity, costs, gates, and nested archives checked. BattleScribe on-device rendering was not available.
+
 ## Revision 19 — Repository host-rule definitions
 
 - Imported matched racial host rules from Xenos of the Great Crusade revision 5 (commit f70e26f6), the archived HH1 repository, and matching 7th Edition faction catalogues.
@@ -195,4 +205,4 @@ Per-unit audit:
 The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence, Custodes, Harlequins, Laer, Storm Scions, Nephilim, Megarachnids, Nurthene, Olamic Quietude, Exodites, Demiurg, Interex, Keylekid, Hrud, Jorgall, Slaugth, Barasonilash, Baalite / Fire Scorpion and Cythor Fiends, Greater Orks, Agents of the Imperium and Agents of the Void now have explicit profiled inventories and fixed prices. Remaining unexpanded external factions use fixed tier-appropriate vehicle-component fallback prices. Tier access and hardpoints remain enforced without manual point-increment buttons.
 
 Catalogue ID: `069890da-d908-533f-9a7b-8ba24b3e3773`  
-Catalogue revision: `19`  
+Catalogue revision: `20`  
