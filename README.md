@@ -29,6 +29,15 @@ Archived 7th-edition Harlequin data source: `https://github.com/BSData/wh40k-7th
 
 
 
+## Revision 23 — Host exemptions and selected-profile display
+
+- Lower tier caps now limit Host Strengthening selections, not host-body statistics or Monstrous adaptations. Strengthening allowance accounts for the chosen body and other active modifiers; an at-cap stat has zero allowance. Universal 10 ceiling remains.
+- Explicit profile names identify the chosen body rather than every possible modifier dependency. Repeated profile effects are guarded by actual selection. On-device verification remains necessary.
+- Explicitly included host wargear and directly attached base equipment is free of both equipment cost and source-role surcharge. Paid extra/replacement equipment retains revision-22 pricing.
+- Prior Walking Meat, Titan eligibility, Infantry and Endless Tide changes preserved.
+
+Base gear without a matched standalone profile remains described in the body rule (no charge): Bolter, Four arachnablades, Hot-shot lasgun, Interex nbinda, Ion rifle, Necrotic sceptre, No source wargear supplied, No wargear, Nurthadtre combi-bow, Ramshackle armour, Secutarii war plate, Tainted cult weapon, Toiphoid assistant nanobots, Two Laeran scythe blades, collimator, gladiator punchblade, krak and psyk-out grenades, phased plasma fusil, plasma and shadow-wave grenades, plasma grenade, slug pistol, temporal projector, twin-linked Laeran energy gauntlets, twin-linked needlers, two ceremonial blades, void-hardened carapace armour.
+
 ## Revision 22 — Balance pass
 
 - Removed Endless Tide everywhere. Flesh Abominations are Infantry with Very Bulky, 50 points/model.
@@ -224,4 +233,4 @@ Per-unit audit:
 The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence, Custodes, Harlequins, Laer, Storm Scions, Nephilim, Megarachnids, Nurthene, Olamic Quietude, Exodites, Demiurg, Interex, Keylekid, Hrud, Jorgall, Slaugth, Barasonilash, Baalite / Fire Scorpion and Cythor Fiends, Greater Orks, Agents of the Imperium and Agents of the Void now have explicit profiled inventories and fixed prices. Remaining unexpanded external factions use fixed tier-appropriate vehicle-component fallback prices. Tier access and hardpoints remain enforced without manual point-increment buttons.
 
 Catalogue ID: `069890da-d908-533f-9a7b-8ba24b3e3773`  
-Catalogue revision: `22`  
+Catalogue revision: `23`  
