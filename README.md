@@ -29,6 +29,15 @@ Archived 7th-edition Harlequin data source: `https://github.com/BSData/wh40k-7th
 
 
 
+
+## Revision 24 — profile display repair and daemon host bodies
+
+- Reworked the live Cerabvore Unit profile modifiers so BattleScribe no longer receives hundreds of conditional modifier sources from the profile info-link itself. The failed Revision 23 dynamic profile-name modifiers were removed; the live characteristic modifiers now sit on the one-use shared Unit profile instead. This is intended to stop roster output from printing every possible Host Body, stat increase and mutation in the Unit profile name while preserving the live statline.
+- Added **Daemons of the Ruinstorm Host Body** to Moderate, Higher and Legendary Cerabvores only: +1 Strength, +1 Toughness, +1 Wound; Daemon of the Ruinstorm; Tides of Madness; Fear; free Daemonic Claws and Talons; +35 points per model. It does not make the host a Monstrous Creature by itself.
+- Added **Chaos Daemons Host Body** to Moderate, Higher and Legendary Cerabvores only: +1 Strength, +1 Initiative, +1 Attack; Daemon; Daemonic Instability; Deep Strike; Fear; free Daemonic Claws and Talons; +25 points per model. It does not make the host a Monstrous Creature by itself.
+- Host Strengthening allowance logic was extended for both new bodies so their characteristic bonuses reduce the remaining strengthening allowance where appropriate, while host-body bonuses themselves remain allowed to exceed the tier cap under the Revision 23 rule.
+- Catalogue and repository index revision increased to **24** so BattleScribe recognises the update.
+
 ## Revision 23 — Host exemptions and selected-profile display
 
 - Lower tier caps now limit Host Strengthening selections, not host-body statistics or Monstrous adaptations. Strengthening allowance accounts for the chosen body and other active modifiers; an at-cap stat has zero allowance. Universal 10 ceiling remains.
@@ -189,8 +198,8 @@ The source document was converted into separate, incrementable BattleScribe choi
 
 - 13 unit entries
 - 809 option groups
-- 9016 selectable upgrade entries
-- 147 host-body selections across eligible profiles
+- 9022 selectable upgrade entries
+- 153 host-body selections across eligible profiles
 - 18 HH1 Astartes Legion affiliations, 49 base Legion items, 75 specialised Legion items and 300 specialised Legion buttons across Cerabvore entries
 - Book Three Greater Orks (75), Agents of the Imperium (109), Agents of the Void (39), named Militia (46), Solar Auxilia (43), Mechanicum (44), Sisters of Silence (15), Custodes (23), Harlequins (45), Laer (22), Storm Scions (12), Nephilim (41), Megarachnids (16), Nurthene (23), Olamic Quietude (23), Exodites (57), Demiurg (27), Interex (29), Keylekid (26), Hrud (25), Jorgall (28), Slaugth (37), Barasonilash (2), Baalite / Fire Scorpion (2) and Cythor Fiends (4) inventories
 - 34 Osseivore host factions, 51 profiled Legion component buttons and 136 Book Three vehicle-component buttons across the four Osseivore tiers
@@ -215,8 +224,8 @@ The source document was converted into separate, incrementable BattleScribe choi
 Per-unit audit:
 
 - Rangda Warleader: 1563 selectable upgrade buttons
-- Higher Cerabvore Host: 1562 selectable upgrade buttons
-- Moderate Cerabvore Hosts: 1421 selectable upgrade buttons
+- Higher Cerabvore Host: 1564 selectable upgrade buttons
+- Moderate Cerabvore Hosts: 1423 selectable upgrade buttons
 - Moderate Osseivore Host: 597 selectable upgrade buttons
 - Lesser Cerabvore Hosts: 593 selectable upgrade buttons
 - Lesser Osseivore Host: 241 selectable upgrade buttons
@@ -224,7 +233,7 @@ Per-unit audit:
 - Lesser Amalgams: 0 selectable upgrade buttons
 - Higher Osseivore Host: 637 selectable upgrade buttons
 - Monstrous Osseicerabvore: 138 selectable upgrade buttons
-- Legendary Cerabvore Host: 1573 selectable upgrade buttons
+- Legendary Cerabvore Host: 1575 selectable upgrade buttons
 - Legendary Osseivore Host: 647 selectable upgrade buttons
 - Oblivion Parasite: 43 selectable upgrade buttons
 
