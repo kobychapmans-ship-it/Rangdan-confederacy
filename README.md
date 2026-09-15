@@ -1,4 +1,4 @@
-# Rangdan Confederacy — revision 25
+# Rangdan Confederacy — revision 26
 
 Upload these four files to the root of the existing Rangdan-confederacy repository:
 - Rangdan_Confederacy_HH1.catz
@@ -11,7 +11,17 @@ https://raw.githubusercontent.com/kobychapmans-ship-it/Rangdan-confederacy/main/
 
 Requires The Horus Heresy 1.0 game system, revision 165. Refresh repository data after replacing all four files.
 
-## Changes
+## Revision 26 — Non-Melded organisms
+
+- Full Non-Melded rules note under Sleeper Host Detachment, including both grade tables and all supplied interaction rules.
+- Burst, Puppet Host, Parasitic Amalgamation, Slithering Control, Vehicle Puppet, Living Forge, Psy-machine and Living Bone Form updated in place.
+- Exposed Parasite, Psychic Organism, Living Core, Core Escape and the other new explanations linked to the appropriate units.
+- Explicit zero-cost Non-Melded state selectors on all four Cerabvore grades, their Moderate leader, the Warleader and all four Osseivore grades. The selector is a display control, not a refund or a new organism purchase. With no body selected, the Non-Melded profile appears automatically.
+- One active body/organism row per affected model selection. Host-derived gear and body bonuses are dormant in the Non-Melded state; intrinsic upgrades persist. Model-level casualty tracking within mixed units remains a tabletop task.
+- Legendary Cerabvores now always have the Higher/Legendary Acidic Bite. Tendrils remain intrinsic, with corresponding attacks hidden when replaced.
+- Existing unit sizes, base costs, daemon tier pricing, army restrictions and source-role surcharges retained.
+
+## Previous revision 25 changes
 
 - Restored host-body statline evaluation by placing live profiles directly on their model selections. Existing body and mutation values are retained; naked Cerabvore values apply only without a body.
 - Chaos Daemons and Daemons of the Ruinstorm use the original Moderate-grade body foundation, then their approved racial bonuses. Both remain Moderate/Higher/Legendary-only.
