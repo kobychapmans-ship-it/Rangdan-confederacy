@@ -1,245 +1,28 @@
-# Rangdan Confederacy — BattleScribe HH v1 repository
+# Rangdan Confederacy — revision 25
 
-This is a standalone catalogue repository built in the same layout as the original Zutan Scribes repository. It does not import the larger `Xenos_of_the_Great_Crusade_HH1.catz` catalogue.
+Upload these four files to the root of the existing Rangdan-confederacy repository:
+- Rangdan_Confederacy_HH1.catz
+- index.bsi
+- index.xml
+- README.md
 
-## Repository files
+BattleScribe Data Index URL:
+https://raw.githubusercontent.com/kobychapmans-ship-it/Rangdan-confederacy/main/index.bsi
 
-- `Rangdan_Confederacy_HH1.catz` — standalone Rangdan catalogue
-- `index.bsi` — BattleScribe Data Index archive (contains `index.xml`)
-- `index.xml` — readable copy of the repository index
-- `README.md` — these instructions
+Requires The Horus Heresy 1.0 game system, revision 165. Refresh repository data after replacing all four files.
 
-Upload all four files to the root of the existing `kobychapmans-ship-it/Rangdan-confederacy` repository. The phone Data Index URL is:
+## Changes
 
-`https://raw.githubusercontent.com/kobychapmans-ship-it/Rangdan-confederacy/main/index.bsi`
+- Restored host-body statline evaluation by placing live profiles directly on their model selections. Existing body and mutation values are retained; naked Cerabvore values apply only without a body.
+- Chaos Daemons and Daemons of the Ruinstorm use the original Moderate-grade body foundation, then their approved racial bonuses. Both remain Moderate/Higher/Legendary-only.
+- Chaos Daemons: 40/110/220 tier base +25 = 65/135/245 points per model.
+- Ruinstorm Daemons: 40/110/220 tier base +35 = 75/145/255 points per model.
+- Rebuilt Strengthening allowance and universal-10 checks to account for the daemon body foundations. Lower tier caps restrict Strengthening, not body or Monstrous bonuses. Save limits remain separate.
+- Retained free included host wargear, paid armoury costs, source-role surcharges, Walking Meat, vehicle-only armouries and Titan eligibility.
+- Removed unreferenced shared definitions, redundant links, empty containers and obsolete README instructions. No selectable options removed.
 
-## Install on a phone
+## Validation and limits
 
-1. In BattleScribe, open **Manage Data** / **Data Repositories**.
-2. Add the raw `index.bsi` URL above as a new Data Index URL.
-3. Refresh data and download **Rangdan Confederacy**.
-4. Create a roster using **The Horus Heresy (HH v1)** and choose the **Sleeper Host Detachment**.
+XML, references, nested archives, cost scaling and representative stat/constraint combinations checked by scripts. The BattleScribe app is not available here; retest the supplied Moderate Astartes roster on the phone after updating.
 
-The catalogue targets HH v1 game-system revision 165, matching the standalone Zutan catalogue.
-
-Archived HH1 armoury data source: `https://github.com/BSData/horus-heresy-1st-edition` at commit `0a4c10da15f4ea40eea0932090fadafe3b90b696`.
-
-Archived 7th-edition Harlequin data source: `https://github.com/BSData/wh40k-7th-edition` at commit `6fd52df8ad613b98b34c635cc6d8011bc312f2e7`.
-
-
-
-
-
-## Revision 24 — profile display repair and daemon host bodies
-
-- Reworked the live Cerabvore Unit profile modifiers so BattleScribe no longer receives hundreds of conditional modifier sources from the profile info-link itself. The failed Revision 23 dynamic profile-name modifiers were removed; the live characteristic modifiers now sit on the one-use shared Unit profile instead. This is intended to stop roster output from printing every possible Host Body, stat increase and mutation in the Unit profile name while preserving the live statline.
-- Added **Daemons of the Ruinstorm Host Body** to Moderate, Higher and Legendary Cerabvores only: +1 Strength, +1 Toughness, +1 Wound; Daemon of the Ruinstorm; Tides of Madness; Fear; free Daemonic Claws and Talons; +35 points per model. It does not make the host a Monstrous Creature by itself.
-- Added **Chaos Daemons Host Body** to Moderate, Higher and Legendary Cerabvores only: +1 Strength, +1 Initiative, +1 Attack; Daemon; Daemonic Instability; Deep Strike; Fear; free Daemonic Claws and Talons; +25 points per model. It does not make the host a Monstrous Creature by itself.
-- Host Strengthening allowance logic was extended for both new bodies so their characteristic bonuses reduce the remaining strengthening allowance where appropriate, while host-body bonuses themselves remain allowed to exceed the tier cap under the Revision 23 rule.
-- Catalogue and repository index revision increased to **24** so BattleScribe recognises the update.
-
-## Revision 23 — Host exemptions and selected-profile display
-
-- Lower tier caps now limit Host Strengthening selections, not host-body statistics or Monstrous adaptations. Strengthening allowance accounts for the chosen body and other active modifiers; an at-cap stat has zero allowance. Universal 10 ceiling remains.
-- Explicit profile names identify the chosen body rather than every possible modifier dependency. Repeated profile effects are guarded by actual selection. On-device verification remains necessary.
-- Explicitly included host wargear and directly attached base equipment is free of both equipment cost and source-role surcharge. Paid extra/replacement equipment retains revision-22 pricing.
-- Prior Walking Meat, Titan eligibility, Infantry and Endless Tide changes preserved.
-
-Base gear without a matched standalone profile remains described in the body rule (no charge): Bolter, Four arachnablades, Hot-shot lasgun, Interex nbinda, Ion rifle, Necrotic sceptre, No source wargear supplied, No wargear, Nurthadtre combi-bow, Ramshackle armour, Secutarii war plate, Tainted cult weapon, Toiphoid assistant nanobots, Two Laeran scythe blades, collimator, gladiator punchblade, krak and psyk-out grenades, phased plasma fusil, plasma and shadow-wave grenades, plasma grenade, slug pistol, temporal projector, twin-linked Laeran energy gauntlets, twin-linked needlers, two ceremonial blades, void-hardened carapace armour.
-
-## Revision 22 — Balance pass
-
-- Removed Endless Tide everywhere. Flesh Abominations are Infantry with Very Bulky, 50 points/model.
-- Final numeric characteristic ceiling 10 (excluding saves, AV, HP and capacity). Lesser/Moderate/Higher/Legendary Cerabvore final caps follow the supplied document, including the separate Moderate leader. Existing save limits retained. Cap overlays include manual increases and reductions; paid excess upgrades grant no additional stat.
-- Titan-class Rangdan weapons require an actually Gargantuan/Super-heavy form.
-- Walking Meat: Lesser 15, Moderate 25, Higher 40, Legendary 60. Lesser Osseivores may now take Walking Meat at one model; Lesser Cerabvore squads remain ineligible at their minimum unit size; Warleader uses Legendary price, Monstrous Osseicerabvore uses Moderate price. Levy costs remain separate.
-- Host armoury items pay the highest matched source-role surcharge: Troops +5, Fast Attack +10, Elites/Heavy Support +15, HQ +20, Lord of War +50 per item. Source roles are resolved by item/profile names in archived source unit trees. Unresolved items conservatively pay +50 and are marked as unresolved, rather than claiming a verified Lord of War origin.
-- XML and arithmetic condition tests performed; BattleScribe app rendering unavailable.
-
-Unresolved source-role names: Additional Arc Pistol, Additional Arm, Additional Hull Point — large Junker [Vehicle Equipment], Additional Hull Point — massive Junker [Vehicle Equipment], Additional Ion Pistol, Additional Keylek Shard Pistol, Additional Light Snuffer, Additional Phased Plasma Missile Launcher [Vehicle Weapon], Additional Slug Pistol, Adrathic Exterminator, Aquillon Terminator Armour, Armourbane Weapon Upgrade, Assured Destruction — Breacher Charge upgrade, Auxilia Lasrifle with Blast-charger, Auxilia Lasrifle with Collimator, Ballista Rocket Launcher [Vehicle Weapon], Banner Bearer, Battle Fortune Battle Skill, Bio-corrosive Rotor Cannon Upgrade, Bio-corrosive Rotor Cannon Upgrade — Junker [Vehicle Equipment], Bladed Edges [Vehicle Equipment], Blastblind Launcher [Vehicle Weapon], Blind Grenade Launcher — Corvus mount [Vehicle Weapon], Blind-Barrage Launcher (profile pending source completion) [Vehicle Equipment], Caiman Howdah — five Combi-bow infantry, Caiman Howdah — three Ballista Rocket Launchers, Canopy — Junker [Vehicle Equipment], Corpulence Flamer Mouth, Crown of Mental Dispersion, Crushing Blow Battle Skill, Crystalline Scythe Matrix, Cult Ambush, Return to the Shadows and Lone Killer, Cult of Pleasure, Cutting Lasers — included pair [Vehicle Weapon], Disarming Strike Battle Skill, Displacement Cannon, Electro Relay Arc [Vehicle Weapon], Electro Shield, Electro-magnetic Conveyor [Vehicle Weapon], Engulfing Maws, Executioner Missile Launcher — Corvus mount [Vehicle Weapon], Executioner Missile Payload Rules, Exitus Ammunition Rules, Exo-armour, Exo-armour Drilling Rig — paid option, Exodite Missile Launcher — profile omitted by source, Extra Set of Arms, First Master-crafted Trophy Weapon, Flakk Missile Upgrade, Flameblood Stinger, Flazorslip Whip, Flechette Burster Pistol Bandolier, Fleshbane Weapon Upgrade, Four Chem Missiles [Vehicle Weapon], Four Deathblow Missiles — Corvus mount [Vehicle Weapon], Gargoathen Mind Nimbus, Goesh Gyer Mask, Gravity Suction Whip, Haywire Weapon Upgrade, Heart Phase Gauntlet, Heavy Arc Thrower — vehicle profile [Vehicle Weapon], Heavy Cutting Laser — profile only [Vehicle Weapon], Heavy Cybernetic Armour, Helical Scythe Pinions, Helion Skyboard, Husk Glaive, Husk Lance, Hybrid ISD — large, Hybrid ISD — small included, Hybrid ISD — small option, Igneous Claws, Induz Pattern, Interceptor Weapon Upgrade, Iron Scale APC Ablative Armour and Armoured Cockpit [Vehicle Equipment], Iron Scale Turret Autocannon [Vehicle Weapon], Iron Scale Turret Heavy Flamer [Vehicle Weapon], Irradiation Engine, Keylek Shard Blaster — Insurgent exchange, Keylek Shard Blaster — included exchange, Keylek Shard Blaster — option, Legiones Astartes — Space Marine Jetbike, Legs — Junker movement [Vehicle Equipment], Light Snuffer (included weapon), Linked Prism Pistols, Master-crafted Weapon Upgrade, Motorised Melee Weapon — War Chief / Ironclad, Nanyte Projector Cloud, Naphta Rifle — character option, Naphta Rifle — unit-wide exchange, Necrotic Sceptre (HQ pistol replacement), Nervesalve Crystal, Ore Extruder — profile only, Pair of Carnodon Sponson Autocannons [Vehicle Weapon], Pair of Carnodon Sponson Heavy Bolters [Vehicle Weapon], Pair of Darughachis Claws, Pair of Graviton Guns, Pair of Ion Rifles — Miner Droid replacement [Vehicle Weapon], Pair of Shuriken Pistols, Pair of Spinceps, Parepleth Symbiotic Sceptre, Phospex Medusa Shell [Vehicle Weapon], Phractal Phase Blade, Phractal Phase Dagger, Phractal Phase Lance (Skyweaver only), Power Claws, Powered Armour, Powered Limbs, Psydrain Blade, Radium Jezzail, Random Appendages, Reinforced Armour — Junker [Vehicle Equipment], Riveblades (profile and price pending source completion), Scything Talons, Second Master-crafted Trophy Weapon, Sheathed Blade / Transport Capacity 6 — Corvus [Vehicle Equipment], Shield of Grace Battle Skill, Shriekpulse — Corpore Caelesti exchange, Skyfire Weapon Upgrade, Sludge Spitters, Sollex Heavy Lascannon [Vehicle Weapon], Spinneret Launcher [Vehicle Weapon], Stare of Stone, Static Holo-field [Vehicle Equipment], Sunfire Incendiary [Vehicle Weapon], Super-heavy Upgrade — massive Junker [Vehicle Equipment], Target Lockers — unit upgrade, Teare Grenades, Teeth and Claws — two included, Toiphoid Assistance Nanobots, Totem Bearer, Tracks — medium/large/massive Junker [Vehicle Equipment], Tracks — small Junker [Vehicle Equipment], Transport Capacity +1 — Junker [Vehicle Equipment], Twin-linked Arc Throwers — Ninurta mount [Vehicle Weapon], Twin-linked Lascannons — Corvus exchange [Vehicle Weapon], Twin-linked Maxima Bolter — Corvus mount [Vehicle Weapon], Twin-linked Rotor Cannons — Corvus exchange [Vehicle Weapon], Twin-linked Volkite Culverins — Corvus mount [Vehicle Weapon], Twin-linked Warcannon [Vehicle Weapon], Twin-linked Wrecker Carbines, Void Ejection, Void-hardened Carapace Plate, Voidling Teeth and Claws, Wheels — Junker movement [Vehicle Equipment], Wings — Junker movement [Vehicle Equipment], Writ of the Great Jest, Writer's Wand
-
-## Revision 21 — Walking Meat and Gargantuan armament
-
-- Removed all 30 Tau/Tyranid printed host choices, including winged variants; other bodies retained.
-- Each Walking Meat option now contains an optional Inducted Levy Squad: 19–49 Levy Auxiliaries plus one Custodian, 40–100 points before upgrades. Includes source weapon swaps, Custodian equipment, frag grenades, vexilla and discipline collars. Walking Meat remains +20 points separately. Army Provenances and Zone Mortalis variants are not granted.
-- Soul Syphon (Walking Meat) is linked from Walking Meat and therefore displays only when selected; imported the Book One survival rule, not the unrelated Olamic attack.
-- Gargantuan Osseicerabvores gain the six Legendary Titan-class Rangdan weapons at the same prices/profiles. Maximum two weapons per host model, locked unless Gargantuan Monstrous Host is selected.
-- XML references, archive integrity, Levy base costs and preserved single-host eligibility checked. No on-device BattleScribe rendering test.
-
-## Revision 20 — Expanded Monstrous Osseicerabvore hosts
-
-- Preserved 38 existing host forms; added 44 source bodies/flight variants and a modular body with four mutually exclusive types. Named/Unique creatures and walkers are excluded.
-- Source costs and statlines come from the archived HH1 and 7e repositories. Corrected the source Gargantuan Squiggoth type cell to enforce the Gargantuan prerequisite. Direct source rules and resolvable mandatory equipment are attached only to their chosen forms. Optional source loadouts are not comprehensively imported in this release.
-- Unassigned faction grades still require a campaign eligibility ruling, as in the earlier forms release.
-- Custom body costs per model: Ground 100, Flying 130, Gargantuan 240, Flying Gargantuan 290. Add the parasite 75; Gargantuan types also add the existing prerequisite 75. These are homebrew combinations of the 40-point Moderate body and existing adaptation tariffs, not official creature costs.
-- Custom final stats: WS4 BS4 S7 T7 W4 I4 A3 LD8 4+/4++ for ordinary types; S9 T9 W6 for Gargantuan types. Strengthening and armour apply afterward.
-- All new forms are unit-wide, cost per model, and change the existing model row. Both Gargantuan forms and custom Gargantuan types are hidden and invalid without the prerequisite.
-- XML references, modifier ordering, form exclusivity, costs, gates, and nested archives checked. BattleScribe on-device rendering was not available.
-
-## Revision 19 — Repository host-rule definitions
-
-- Imported matched racial host rules from Xenos of the Great Crusade revision 5 (commit f70e26f6), the archived HH1 repository, and matching 7th Edition faction catalogues.
-- Every imported racial rule is linked only from its matching host-body selection. Changing bodies changes those rule links; unselected bodies grant nothing. Osseivore faction selection does not grant infantry host-body rules.
-- Preserved all costs, constraints, modifiers and profiles. XML links, unique IDs, archive integrity and body-specific rule ownership passed checks; the phone app was not available for a rendering test.
-- Some repositories still only list or omit definitions. These remain explicit unresolved grants:
-
-- Anrathe Aeldarii: A Doomed Race, Anrathe
-- Baalite / Fire Scorpion: Ferromous Aura
-- Barasonilash: Natural Divinist, Psionic Foci, Seer's Prescience
-- Cythor Fiends: Dematerialise, Relic Nimbleness
-- Demiurg: All in a Day, Knock It Down
-- Khrave: Hive Mind
-- Shae'Lait: Epitome of Excess, Mark/Daemon of Slaanesh, Seduction's Explicit Touch, The Six-fold Path
-
-## Revision 18 — Original document audit and selected rules
-
-- Compared all 19 Unit statlines and 13 core unit per-model costs with Rangdan confederacy(1).docx.
-- Full selected wargear effects and resolvable weapon/host special rules now appear as rule links on the owning selection. Unselected optional equipment does not grant its rules.
-- Restored abbreviated Walking Meat, Oblivion Anathema, spawn and custom weapon effects. Corrected Lesser/Moderate Acidic Bite so it does not inherit Higher-only Psy-lash.
-- Retained the later user-approved chassis, eligibility, faction armoury and vehicle-only changes.
-- The source does not define Collective Mind or the amount of Oblivion Anathema's Leadership penalty. These remain explicit source questions rather than invented rules. Some faction-specific terms also require their faction sources where no definition is present in the retained catalogues.
-- Source-access/pricing notes remain Wargear reference profiles. Costs and stat modifiers pass regression checks; phone-app rendering has not been tested.
-
-## Revision 17 — HH1-style upgrade and rules formatting
-
-- Concise upgrade and wargear names; redundant unit, faction and import-source prefixes removed.
-- 6334 source-access and stat-upgrade notes moved from Selection Rules to Wargear Item description profiles, preserving their full restrictions and costs text.
-- Genuine special rules remain rules; weapons remain Weapon profiles with Range, Strength, AP and Type columns.
-- Vehicle-only tags remain visible on options and profiles. Option groups, model limits, tier gates, costs and live statline modifiers are unchanged.
-- Formatting reference: BSData/horus-heresy-1st-edition, including the Legiones Astartes catalogue. BattleScribe controls fonts and roster page styling; this revision changes catalogue labels and data presentation.
-- Regression checks passed for all IDs, links, costs, constraints, modifiers, condition trees and existing profile values. No on-device BattleScribe test was available.
-
-## Revision 16 — 7th Edition Aeldari host armouries
-
-- Expanded the existing **Craftworld Aeldari**, **Dark Eldar** and **Corsairs** host-body selectors; no duplicate host forms were created.
-- Imported 184 Craftworld, 116 Dark Eldar and 116 Corsair priced equipment/weapon variants from the archived BSData 7th Edition repository at commit `6fd52df8ad613b98b34c635cc6d8011bc312f2e7`.
-- Preserved every linked weapon mode, equipment description and directly linked option rule available in the source catalogues.
-- Every vehicle-only choice is marked **[Vehicle Weapon]** or **[Vehicle Equipment]** in its option and profile names.
-- Osseivore host-faction branches expose only those explicitly vehicle-tagged choices; personal infantry, character and relic equipment is excluded from Osseivore chassis.
-- Existing tier gates remain unchanged: the three factions are available to Moderate, Higher and Legendary Cerabvores/Osseivores, plus the Rangda Warleader where its existing host-body selector permits them.
-
-## Revision 15 — BattleScribe loading compatibility fix
-
-- Restored the catalogue schema as BattleScribe's default XML namespace instead of the standards-valid but client-incompatible `ns0:` prefix generated in the first revision 14 package.
-- Promoted the corrected build to revision 15 so BattleScribe detects and downloads it instead of retaining a cached broken revision 14 catalogue.
-- No revision 14 army rules, costs, profiles, tier gates or vehicle filters were changed by this compatibility rebuild.
-
-## Revision 14 — Book Three factions and tagged vehicle components
-
-- Added the **Greater Orks** armoury (75 entries) to the existing Greater Orks Host Body; no duplicate Ork host form was created.
-- Added **Agents of the Imperium** (109 entries) and **Agents of the Void** (39 entries) armouries to their existing tier-gated host forms.
-- Every weapon has a linked Book Three profile. Every armour, field, cybernetic upgrade, relic, vehicle system and other equipment option includes its printed effect and fixed source cost.
-- Distinct printed prices are preserved as separate labelled buttons. Included/base wargear remains 0 points on Cerabvores and uses the established chassis fallback price on Osseivores.
-- All Junker, Ork Artillery and Corvus Strike Fighter components are explicitly marked **[Vehicle Weapon]** or **[Vehicle Equipment]** in both option labels and linked profiles.
-- Osseivore branches receive only those tagged components. No infantry, character, assassin, relic or personal weapon from these lists is exposed on an Osseivore chassis; Agents of the Void has no printed vehicle component and therefore retains only its generic vehicle fallback controls.
-- Named/Unique Agents of the Void are not added as host forms. Their appendix profiles remain clearly labelled source-restricted reference choices so every printed weapon/equipment profile is retained without making those bodies legal. Source Force Organisation, model-ratio, replacement, one-per-army and chassis restrictions remain visible on every option.
-
-## Revision 13 — Book Two factions and vehicle-only Osseivore armouries
-
-- Added complete host armouries for **Exodites** (57 items), **Demiurg** (27), **Interex** (29), **Keylekid** (26), **Hrud** (25) and **Jorgall** (28) from the supplied Great Crusade Book Two reference.
-- Every printed weapon profile, available equipment rule and distinct option price is represented. Source omissions such as Pulsar, Sonic Lance, Exodite Missile Launcher ammunition, Flechette Launcher, Survey Glass and Hexagrammatic Wards are labelled as omissions instead of receiving invented rules.
-- 184 armoury entries across all factions are now explicitly tagged **[Vehicle Weapon]** or **[Vehicle Equipment]** in both their option labels and linked profile names.
-- Every Osseivore faction branch now contains only those tagged vehicle components. Infantry weapons, character relics, personal armour, mounts and other non-vehicle wargear remain available to eligible Cerabvores but cannot be selected on an Osseivore chassis.
-- Generic fallback buttons remain vehicle-only and are used solely for eligible components that are present on a source vehicle datasheet but not explicitly profiled in this catalogue.
-
-## Revision 12 — six Great Crusade xenos armouries
-
-- Removed all eight Harlequin role/sub-form selectors. **Harlequins Host Body** is again the single standard Harlequin body choice, exactly as in the original Rangdan host list.
-- Added explicit **Laer** (22 items), **Storm Scions** (12), **Nephilim** (41), **Megarachnids** (16), **Nurthene** (23) and **Olamic Quietude** (23) armouries.
-- Every available racial weapon has a BattleScribe weapon profile. Armour, artefacts, biological adaptations, command equipment and other non-weapon upgrades have fixed prices and rules descriptions.
-- Where the same item has different printed prices for different source units, separate labelled buttons preserve those costs instead of collapsing them into one estimate.
-- Their matching Osseivore Host Faction branches retain only items identified as vehicle weapons or vehicle equipment; included components use the chassis fallback price and purchased upgrades retain their printed cost.
-- Generic Imperial equipment mentioned by the Nephilim list is included only where a profile or cost was supplied; externally referenced Crusade Imperialis datasheets remain cross-references and were not invented.
-
-## Revision 11 — Harlequin armoury retained
-
-- Added 45 Harlequin weapons and equipment choices across the 7th-edition base armoury and the supplied additions, including 17 custom revision 11 items.
-- The single standard Harlequin Host Body displays its Holo-suit 5++ save alongside the Cerabvore host's armour save.
-- The matching Harlequin Host Faction branch is available to Moderate, Higher and Legendary Osseivore vehicle forms and is restricted to explicitly vehicle-mounted Harlequin weapons and equipment.
-- Incomplete supplied entries are preserved honestly: Riveblades and the Blind-Barrage Launcher are selectable markers with their supplied costs where present, but no invented profile was added.
-
-## Revision 10 — Rangdan xenos host-faction armouries
-
-- **Slaugth** host bodies and vehicle facsimiles now expose 37 named weapons and equipment choices from the supplied Slaugth Intendant faction insert, including Necrotic and Parepleth sceptres, Husk weapons, Slaugth relics, Voidling weapons, Rad weapons, drone components, Shoggoth weapons and fixed-cost upgrades.
-- **Barasonilash** now expose their 2 supplied items: the Flechette Burster Pistol Bandolier and Crown of Mental Dispersion.
-- **Baalite / Fire Scorpion** now expose their 2 supplied natural weapons: Igneous Claws and the Flameblood Stinger.
-- **Cythor Fiends** now expose all 4 supplied choices: Stare of Stone, Scything Talons, Crystalline Scythe Matrix and Toiphoid Assistance Nanobots.
-- These four armouries use the same structure as the existing Imperial factions: selecting the matching Cerabvore Host Body reveals its weapon/equipment branch. Their Osseivore branches now expose only explicitly vehicle-classified components; factions with no printed vehicle component use the vehicle-only fallback controls.
-
-### Revision 9 Monstrous Osseicerabvore update retained
-
-- Added 38 selectable forms derived from all 37 printed non-Unique host entries supplied in the Monstrous Osseicerabvore catalogue. The separate upgraded Arch-Daemon button accounts for the extra selection. Coverage includes Mechanicum, Legiones Astartes, Solar Auxilia, Questoris support, Daemons of the Ruinstorm, legacy 7th-edition Chaos Daemons, Craftworld and Necron compatibility sources.
-- Each selection adds the printed host cost per model and replaces the live Unit Type, WS, BS, S, T, W, I, A, Ld and Save fields instead of appending a second statblock.
-- The 4 Gargantuan choices are hidden until **Gargantuan Monstrous Host** is selected. The upgraded Arch-Daemon is represented at its full 700-point source cost, with the separate Rangdan +75-point Gargantuan surcharge retained.
-- Named characters, Unique models, Walkers, Vehicles, Infantry, Beasts, Cavalry and Primarchs remain excluded. Source-faction, allegiance, Rite of War and campaign-tier restrictions remain visible on their applicable choices.
-
-### Revision 8 update retained
-
-- **Walking Meat** is present on all eight eligible Rangdan entries. On units that can add models, BattleScribe now hides the option and sets its maximum to zero whenever the unit contains two or more models; reducing the unit to exactly one model makes it available again.
-- All 193 formerly source-dependent Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence and Custodes entries now have fixed BattleScribe prices. The generator uses the most common positive archived HH1 upgrade cost, choosing the lower value on a tied mode. Items only included as base wargear remain 0 points for Cerabvores and use the chassis fallback price for Osseivores.
-- Unlisted external-faction Cerabvore wargear and Osseivore vehicle components now use visible fixed tier/chassis fallback prices instead of a zero-point manual source-price placeholder.
-- The **Higher Osseivore Host** no longer has a Monstrous Mutation group or any Monstrous/Flying Monstrous Creature choices.
-- Every Skimmer and Flyer modular chassis movement pattern now subtracts 1 Hull Point from the displayed profile. Walker and Tank forms retain their full Hull Points; all 8 tier/movement bindings are validated.
-
-### Revision 7 faction-armoury foundation retained
-
-- The Astartes armoury now includes 49 base Legion weapons and equipment alongside the 75 Legion-specialised entries. Base items sit above the eighteen-Legion affiliation selector, so they do not need to be duplicated inside every Legion.
-- Militia and Cults (46 named items) and Solar Auxilia (43 named items) now have profiled weapon and equipment trees for every tier that can select their host form, including Lesser Cerabvores.
-- Mechanicum (44 named items) and Sisters of Silence (15 named items) forms and armouries are tier-gated to Moderate, Higher and Legendary Cerabvores and Osseivores.
-- Custodes forms and their 23 named items are tier-gated to Higher and Legendary Cerabvores and Osseivores.
-- Osseivore host-faction selectors enforce the host grade and filter every imported armoury to vehicle weapons and vehicle equipment only. Lesser cannot select Astartes, Mechanicum, Sisters or Custodes; Moderate adds Astartes, Mechanicum and Sisters; Higher adds Custodes.
-- Included/base vehicle components pay the matching chassis uncosted-component value. Every other named imported component now uses its fixed revision 8 price.
-
-Revision 6's gated GMC/Titan weapons, Hidden Mutant eligibility, live Moderate-leader profile, consolidated Osseivore faction selector and removed legacy vehicle-upgrade sections are retained. All earlier exact chassis, live-statline and Cerabvore mutual-exclusion work also remains intact.
-
-## Upgrade-button coverage
-
-The source document was converted into separate, incrementable BattleScribe choices instead of combined text-only upgrades:
-
-- 13 unit entries
-- 809 option groups
-- 9022 selectable upgrade entries
-- 153 host-body selections across eligible profiles
-- 18 HH1 Astartes Legion affiliations, 49 base Legion items, 75 specialised Legion items and 300 specialised Legion buttons across Cerabvore entries
-- Book Three Greater Orks (75), Agents of the Imperium (109), Agents of the Void (39), named Militia (46), Solar Auxilia (43), Mechanicum (44), Sisters of Silence (15), Custodes (23), Harlequins (45), Laer (22), Storm Scions (12), Nephilim (41), Megarachnids (16), Nurthene (23), Olamic Quietude (23), Exodites (57), Demiurg (27), Interex (29), Keylekid (26), Hrud (25), Jorgall (28), Slaugth (37), Barasonilash (2), Baalite / Fire Scorpion (2) and Cythor Fiends (4) inventories
-- 34 Osseivore host factions, 51 profiled Legion component buttons and 136 Book Three vehicle-component buttons across the four Osseivore tiers
-- 4 exact modular Osseivore chassis profiles
-- 99 explicit twin-linked weapon selections
-- 3175 live displayed-profile modifiers (2654 conditional and 521 incrementable)
-- 230 zero-cost manual +/- stat buttons and 319 manual Save overrides
-- individual buttons for Strength, Toughness, Weapon Skill, Ballistic Skill, Wounds, Initiative, saves and Mastery Levels where eligible
-- explicit groups for natural weapons, Rangdan weapons, specialist/heavy allowances, eligible non-Osseivore armour and mounts, unique equipment, mutations, external vehicle hosts, faction-gated modular chassis components, Osseivore modifications and Osseivore upgrades
-
-## Dynamic statline controls
-
-- Choosing an alternate host body replaces the displayed WS, BS, S, T, W, I, A, LD, Save and applicable Unit Type with that tier's host-body values, including every race modifier printed in the source.
-- The Moderate leader in a Lesser Cerabvore brood has a separately modified live profile, so its tier-correct values no longer collapse into or mirror the Lesser row.
-- Monstrous and Gargantuan mutations change Unit Type and add the printed +2 or +4 to Strength, Toughness and Wounds.
-- Numeric Host Strengthening and Osseivore statistic options now increment the displayed profile once per click; the priced Save improvement points to the manual Save override because HH v1 stores combined armour/invulnerable saves as text.
-- Mount bonuses and unit types are applied automatically for eligible non-Osseivore entries where the source gives a numeric change.
-- Osseivore statistic upgrades apply directly to the selected modular chassis row. The tested Higher Skimmer example resolves to WS 6, BS 5, S 9, AV 14/14/12, I 5, A 4 and 6 HP after its selected increments and the Skimmer's -1 HP adjustment.
-- Unit-wide host bodies, eligible armour/mounts, mutations, chassis forms and statistic upgrades are selected once; their points modifiers charge the listed cost for every model in the unit.
-- Where retained, the manual +/- and Save override groups are zero-cost display tools for mixed host forms, scenario effects or unusual combinations. They never grant a rules discount; both Amalgam entries intentionally omit them in revision 5.
-
-Per-unit audit:
-
-- Rangda Warleader: 1563 selectable upgrade buttons
-- Higher Cerabvore Host: 1564 selectable upgrade buttons
-- Moderate Cerabvore Hosts: 1423 selectable upgrade buttons
-- Moderate Osseivore Host: 597 selectable upgrade buttons
-- Lesser Cerabvore Hosts: 593 selectable upgrade buttons
-- Lesser Osseivore Host: 241 selectable upgrade buttons
-- Amalgams, Flesh Abominations: 1 selectable upgrade buttons
-- Lesser Amalgams: 0 selectable upgrade buttons
-- Higher Osseivore Host: 637 selectable upgrade buttons
-- Monstrous Osseicerabvore: 138 selectable upgrade buttons
-- Legendary Cerabvore Host: 1575 selectable upgrade buttons
-- Legendary Osseivore Host: 647 selectable upgrade buttons
-- Oblivion Parasite: 43 selectable upgrade buttons
-
-## Source gaps retained honestly
-
-The supplied rules list **Pirates** and **Kroot** as host bodies but provide no rules, wargear, statistic changes or points modifiers. Both remain selectable, with a 0-point race modifier and a note identifying the missing source data. Astartes, Militia, Solar Auxilia, Mechanicum, Sisters of Silence, Custodes, Harlequins, Laer, Storm Scions, Nephilim, Megarachnids, Nurthene, Olamic Quietude, Exodites, Demiurg, Interex, Keylekid, Hrud, Jorgall, Slaugth, Barasonilash, Baalite / Fire Scorpion and Cythor Fiends, Greater Orks, Agents of the Imperium and Agents of the Void now have explicit profiled inventories and fixed prices. Remaining unexpanded external factions use fixed tier-appropriate vehicle-component fallback prices. Tier access and hardpoints remain enforced without manual point-increment buttons.
-
-Catalogue ID: `069890da-d908-533f-9a7b-8ba24b3e3773`  
-Catalogue revision: `23`  
+Source baselines: supplied revision 24; original Rangdan document and pre-display-change catalogue; archived BSData Horus Heresy 1.0 and 7th-edition data already used by this project. Unresolved equipment profiles/source-role assignments from earlier versions remain explicitly marked; no new rules or prices were invented to fill those gaps.
