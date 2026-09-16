@@ -1,3 +1,17 @@
+# Rangdan Confederacy — revision 28
+
+Presentation cleanup: duplicate equivalent Host Body wargear profiles removed;
+explicit selected-body/form Unit names; shared Rangdan melding and organism
+rules consolidated into a zero-point Configuration (non-Force-Org) entry.
+Individual unit, weapon, selected-body and upgrade rules remain on their entries.
+All revision 27 prices, characteristic values and statistical modifiers retained.
+
+Replace all four repository files and refresh BattleScribe data. Existing rosters
+may need the Rangdan Melding and Organism Rules Configuration entry added once.
+Archive/XML validation is automated; rendering in the mobile app needs checking.
+
+## Retained revision 27 documentation and pricing review
+
 # Rangdan Confederacy — Revision 27
 
 Host Armoury Pricing: use a published standalone or upgrade cost plus the lowest applicable source-role surcharge within the correct faction: Troops +5; Fast Attack +5; Elites +10; Heavy Support +10; HQ +15; Lords of War +25 points. Unpriced common personal equipment costs 5 points total, without an additional surcharge. Other unpriced equipment is unavailable until an explicit Host Facsimile Cost is listed. A Host Body's included equipment is free, displayed with that body, and cannot be bought again from its armoury. Vehicle-only equipment is marked; Osseivore host armouries offer only equipment verified for vehicles in that faction. Source availability and existing tier/Titan restrictions still apply.
@@ -751,16 +765,3 @@ No new Host Facsimile Costs have been invented. Entries below are unavailable pe
 | Storm Scions | Electro Relay Arc [Vehicle Weapon] | Faction/source-role provenance requires confirmation; no inferred price. |
 | Storm Scions | Electro Shield | Faction/source-role provenance requires confirmation; no inferred price. |
 | Storm Scions | Heavy Electro Discharger | No published standalone/upgrade cost: explicit Host Facsimile Cost required. |
-
-## Revision 28 — roster-output cleanup
-
-- Collapses duplicate base-wargear display profiles, including repeated Power Armour variants.
-- Removes source-restriction provenance profiles from printed roster wargear; the source metadata remains attached to catalogue options.
-- Removes the oversized universal-cap dependency trees from displayed Unit profiles. The tier-aware Host Strengthening controls remain in place, while host/form profiles continue to use the normal Horus Heresy characteristic ceiling.
-- Cleans Cerabvore live-profile names so BattleScribe can show the unit plus the selected Host Body and non-Infantry movement/Monstrous form instead of every possible dependency.
-- Adds `Rangdan Shared Rules & Melding Reference` under Configuration and moves repeated detachment/melding rules there. Unit-specific rules remain on their unit.
-
-On-device BattleScribe rendering should still be checked because BattleScribe itself annotates modified profile names based on modifier dependencies.
-
-
-- Removed 201 Host Armoury purchase entries that duplicated wargear explicitly listed as included by the matching Host Body.
