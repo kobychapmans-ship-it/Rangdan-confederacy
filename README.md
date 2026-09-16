@@ -1,3 +1,13 @@
+# Rangdan Confederacy — revision 29
+
+- Corrected selected Host Body stock-wargear visibility for every faction.
+- Added one published Militia Provenance of War per Militia Host Body.
+- Added the Rangdan psychic-discipline reference to Configuration.
+- Removed source Relics/Artefacts/Heirlooms/Treasures from Host Armouries.
+- Removed manual statline/save controls and ordinary Cerabvore external fallback wargear.
+- Natural Weapons are labelled for Non-Melded use; Osseivore Walking Meat now requires Non-Melded state.
+- Clarified that body/provenance/wargear effects may exceed Strengthening tier caps, to universal 10 and 2+/2++ limits.
+
 # Rangdan Confederacy — revision 28
 
 Presentation cleanup: duplicate equivalent Host Body wargear profiles removed;
