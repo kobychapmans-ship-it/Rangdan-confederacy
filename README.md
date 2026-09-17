@@ -1,3 +1,9 @@
+# Rangdan Confederacy — revision 30
+
+- Militia Provenance is one mandatory, free Configuration choice shared by every Militia Host Body.
+- Ablative Weapon Morphology now opens one real next-grade Rangdan weapon choice; its +10-point surcharge is included in that weapon.
+- Stock Host Body armour and unconditional save-affecting wargear now update the live Save characteristic, including Militia Provenance interactions, capped at 2+/2++.
+
 # Rangdan Confederacy — revision 29
 
 - Corrected selected Host Body stock-wargear visibility for every faction.
