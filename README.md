@@ -1,3 +1,13 @@
+# Rangdan Confederacy — revision 32
+
+- Collective Body: once per model per battle in the Sleeper Host Detachment. Additional Non-Melded Lesser Cerabvores: Lesser 1; Moderate D3; Higher D6+2; Legendary 2D6+3.
+- Configuration rules note plus independent numbered Available / Used indicators for each eligible model (including the Moderate leader). Only slots for the selected model count appear. These are manual battle-state indicators; reset before each new battle.
+- Legendary Osseivore: complete six-weapon normal Titan pool and matching six-weapon Ablative pool (+10 points per selected Ablative weapon). The normal pool follows the Legendary Cerabvore six-selection limit; Ablative remains one weapon.
+- Titan eligibility: actual melded Super-heavy chassis, Gargantuan or Flying Gargantuan organism form. Ordinary Non-Melded Infantry remains ineligible; an intrinsic Gargantuan mutation qualifies without a vehicle shell. Imported faction Titan weapons keep their faction/price restrictions.
+- Validated XML, archive metadata, prices, weapon coverage and eligibility scenarios. Mobile BattleScribe application not available for direct testing.
+
+Replace all four repository files and refresh BattleScribe data.
+
 # Rangdan Confederacy — revision 31
 
 - Free stock equipment now lives in the corresponding Host Armoury. Each item defaults to equipped; select Replaced / not equipped to remove its profiles and save effects.
