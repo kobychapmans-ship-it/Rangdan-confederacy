@@ -1,3 +1,14 @@
+# Rangdan Confederacy — revision 31
+
+- Free stock equipment now lives in the corresponding Host Armoury. Each item defaults to equipped; select Replaced / not equipped to remove its profiles and save effects.
+- Indomitus, Cataphractii and Tartaros Terminator armour cost 35 points, using the archived HH1 Centurion/Praetor price as explicitly requested. Replace stock Power Armour before selecting a Terminator pattern.
+- Anrathe draft: racial rules, stock equipment, doctrine selections, published-cost personal and vehicle equipment. Existing Rangdan body prices and characteristic baselines are preserved.
+- Xenos imports checked against upstream catalogue revision 6. No inferred prices for unpriced powerful weapons, relics or unique gear.
+- Armour and invulnerable saves combine across selected equipment, with a 2+/2++ limit. Conditional battlefield saves remain in their equipment rules.
+- Validation covers catalogue references, default equipment, selection predicates, statline scenarios and nested archives. Not tested in the BattleScribe mobile application.
+
+Upload all four files to the repository root, then refresh BattleScribe data.
+
 # Rangdan Confederacy — revision 30
 
 - Militia Provenance is one mandatory, free Configuration choice shared by every Militia Host Body.
