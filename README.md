@@ -1,3 +1,23 @@
+# Rangdan Confederacy — revision 33
+
+Maturation of the Host is in the common Rangdan rules section. Army-building Maturation entries appear in the original grade’s Force Organisation category. Each resulting model includes all contributing organisms’ base costs plus its own base cost. Destination-grade unit sizes and upgrade options apply; contributors do not also appear as living roster models.
+
+Direct paths per resulting model before options:
+- Lesser → Moderate: 60 points (Troops).
+- Lesser → Higher: 200 points (Troops).
+- Moderate → Higher: 80 points (Elites).
+- Higher → Legendary: 350 points (HQ).
+
+Chained paths include the intermediate organisms’ base costs:
+- Lesser → Moderate → Higher: 230 points (Troops).
+- Lesser → Higher → Legendary: 800 points (Troops).
+- Moderate → Higher → Legendary: 440 points (Elites).
+- Lesser → Moderate → Higher → Legendary: 890 points (Troops).
+
+Battlefield Maturation costs no additional points. Resolve it after the eligible Assault victory, using Non-Melded contributors. Track the resulting models on the tabletop; BattleScribe does not automatically process casualties or transformations during play. If any contributor has spent Collective Body, set the resulting model’s tracker to Used; otherwise it retains one use appropriate to its new grade.
+
+The revision32 Titan pools and form restrictions are retained. Replace all four repository files and refresh BattleScribe. Structural and scenario validation is provided; the mobile application is not directly tested.
+
 # Rangdan Confederacy — revision 32
 
 - Collective Body: once per model per battle in the Sleeper Host Detachment. Additional Non-Melded Lesser Cerabvores: Lesser 1; Moderate D3; Higher D6+2; Legendary 2D6+3.
