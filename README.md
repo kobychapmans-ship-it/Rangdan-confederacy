@@ -1,3 +1,13 @@
+# Rangdan Confederacy — revision 34
+
+Puppet Masters free upgrades are now costed controls. Select normal Host Strengthening / Osseivore statistic upgrades, then select matching claims under Puppet Masters — Free Upgrade Allocation. Each claim refunds its exact cost, including per-model scaling. The original choice remains responsible for stats and normal caps.
+
+Allowance: one free increment per starting Legendary Cerabvore, including pre-battle Maturation selections. Claims share a total allowance and cannot exceed purchased increments. Mixed host-faction armies and recipients without a host are ineligible.
+
+Army creation only. Maturation, Collective Body, Mass Spawning, Host Breeder and other models created after the battle begins receive no free upgrades and cannot create new grants. A zero-point Created after battle began marker disables the corresponding allocation and removes a newly created Legendary from the provider count. For mixed starting/created models, use separate entries. Keep the original army roster as the starting allocation record: these are army-building controls, not automatic casualty or real-time battle tracking.
+
+Normal unit prices, stat modifiers, caps, host options, Maturation and Titan access are retained. Mobile application testing is still required; XML, price and eligibility scenarios are validated separately.
+
 # Rangdan Confederacy — revision 33
 
 Maturation of the Host is in the common Rangdan rules section. Army-building Maturation entries appear in the original grade’s Force Organisation category. Each resulting model includes all contributing organisms’ base costs plus its own base cost. Destination-grade unit sizes and upgrade options apply; contributors do not also appear as living roster models.
