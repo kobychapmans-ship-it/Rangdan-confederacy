@@ -1,3 +1,13 @@
+# Rangdan Confederacy — revision 37
+
+Walking Meat now requires exactly one Osseivore organism in the unit and a Non-Melded state (explicitly marked, or no chassis selected). Monstrous mutations are not eligible. The attached Levy is a separate unit and does not invalidate the one-Osseivore requirement.
+
+Purchased melee weapons require an active Walker chassis: this includes native replacements, Ablative Morphology, Titan weapons and every Host Faction armoury. Mixed shooting/melee packages are Walker-only. Tanks, Skimmers, Flyers and Non-Melded/Monstrous organism forms cannot buy these melee options. Existing grade, faction and Titan restrictions remain; ranged choices retain their existing access rules. Intrinsic default Liquid Bone Tendrils are not removed by this purchase restriction.
+
+Host-armoury weapon options retain the vehicle-only pools and now consistently display a Vehicle Weapon tag. No Cerabvore or Monstrous Osseicerabvore pools are changed. Shared options carry these restrictions to the Synarch and Carrion Forge Moderate Troops.
+
+Revision 36 chassis costs and all other prices/stat profiles are retained. Replace all four repository files and refresh BattleScribe. Local selection and archive validation is supplied; mobile application testing is still required.
+
 # Rangdan Confederacy — revision 36
 
 Chassis options now carry explicit base prices instead of zero prices calculated entirely through repeats. Unit-wide chassis selection still charges every model, using explicit total prices for two- and three-model units.
