@@ -1,3 +1,368 @@
+# Revision 38 — HH1 vehicle armoury inventory audit
+
+Source: BSData/horus-heresy-1st-edition, commit 0a4c10da15f4ea40eea0932090fadafe3b90b696.
+
+182 new tier-specific selectable entries; 160 existing item/tier matches retained with their existing costs and restrictions. Vehicle melee requires a Walker. New choices require an active chassis and are unavailable while Non-Melded. Shared Higher options also serve the Synarch.
+
+## Added options
+
+| Tier | Faction | Option | Points | Source vehicle |
+|---|---|---|---:|---|
+| Lesser | Solar Auxilia | Auxiliary Drive | 15 | Dracosan Armoured Transport |
+| Lesser | Solar Auxilia | Dozer Blade | 10 | Dracosan Armoured Transport |
+| Lesser | Solar Auxilia | Extra Armour | 10 | Saturnyne Pattern Aurox Armoured Transport |
+| Lesser | Solar Auxilia | Flare Shield | 30 | Dracosan Armoured Transport |
+| Lesser | Militia and Cults | Multi-laser | 15 | Arvus Lighter, Auxilia |
+| Lesser | Militia and Cults | Autocannon | 15 | Arvus Lighter, Auxilia |
+| Lesser | Militia and Cults | Lascannon | 25 | Arvus Lighter, Auxilia |
+| Lesser | Militia and Cults | Twin-linked Heavy Bolter | 25 | Land Raider Proteus |
+| Lesser | Militia and Cults | Twin-linked Lascannon | 25 | Land Raider Proteus |
+| Moderate | Astartes | Auxiliary Drive | 15 | Land Raider Phobos (DT) |
+| Moderate | Astartes | Dozer Blade | 10 | Land Raider Phobos (DT) |
+| Moderate | Astartes | Extra Armour | 10 | Terrax Pattern Termite Assault Drill |
+| Moderate | Astartes | Frag Assault Launchers | 15 | Anvillus Pattern Dreadclaw Drop Pod |
+| Moderate | Astartes | Hunter-killer Missile | 10 | Dreadnought Talon, Legion |
+| Moderate | Astartes | Smoke Launchers | 15 | Triaros Armoured Conveyor |
+| Moderate | Astartes | Explorator Augury Web | 55 | Land Raider Proteus (DT) |
+| Moderate | Astartes | Armoured Cockpit | 10 | Xiphon Interceptor |
+| Moderate | Astartes | Cyclonic Melta Lance | 30 | Leviathan Siege Dreadnought |
+| Moderate | Astartes | Leviathan Storm Cannon | 20 | Leviathan Siege Dreadnought |
+| Moderate | Astartes | Grav-flux Bombard | 30 | Leviathan Siege Dreadnought |
+| Moderate | Astartes | Twin-linked Lascannon | 20 | Mhara Gal Tainted Dreadnought |
+| Moderate | Astartes | Laser Destroyer Array | 20 | Vindicator Tank, Legion |
+| Moderate | Astartes | Laser Destroyer | 15 | Spartan Assault Tank (DT) |
+| Moderate | Astartes | Aiolos Missile Launcher | 45 | Deredeo Pattern Dreadnought |
+| Moderate | Astartes | Reaper Autocannon Battery | 20 | Fire Raptor Gunship, Legion |
+| Moderate | Astartes | Heavy Conversion Beamer | 40 | Contemptor Dreadnought Talon |
+| Moderate | Mechanicum | Anbaric Claw | 25 | Krios |
+| Moderate | Mechanicum | Auxiliary Drive | 20 | Macrocarid Explorator |
+| Moderate | Mechanicum | Blessed Autosimulacra | 15 | Triaros Armoured Conveyor |
+| Moderate | Mechanicum | Explorator Augury Web | 60 | Macrocarid Explorator |
+| Moderate | Mechanicum | Smoke Launchers | 10 | Triaros Armoured Conveyor |
+| Moderate | Mechanicum | Autocannon | 15 | Crusade Fleet Arvus Lighter Orbital Shuttle |
+| Moderate | Solar Auxilia | Armoured Cockpit | 25 | Auxilia Arvus Lighter Orbital Shuttle |
+| Moderate | Solar Auxilia | Auxiliary Drive | 15 | Dracosan Armoured Transport |
+| Moderate | Solar Auxilia | Dozer Blade | 10 | Dracosan Armoured Transport |
+| Moderate | Solar Auxilia | Extra Armour | 10 | Saturnyne Pattern Aurox Armoured Transport |
+| Moderate | Solar Auxilia | Flare Shield | 25 | Auxilia Thunderbolt Heavy Fighter |
+| Moderate | Solar Auxilia | Hunter-killer missile | 15 | Auxilia Leman Russ Annihilator |
+| Moderate | Solar Auxilia | Searchlight | 11 | Auxilia Arvus Lighter Orbital Shuttle |
+| Moderate | Solar Auxilia | Multi-Laser | 20 | Saturnyne Pattern Carnodon Strike Squadron |
+| Moderate | Solar Auxilia | Pintle-mounted Heavy bolter | 20 | Auxilia Basilisk |
+| Moderate | Solar Auxilia | Twin-Linked Lascannon | 30 | Saturnyne Pattern Carnodon Strike Squadron |
+| Moderate | Militia and Cults | Dozer blade | 15 | Leman Russ Annihilator |
+| Moderate | Militia and Cults | Extra armour | 15 | Leman Russ Annihilator |
+| Moderate | Militia and Cults | Armoured Ceramite | 30 | Malcador Heavy Tank, Auxilia |
+| Moderate | Militia and Cults | Hunter-killer Missile | 10 | Auxilia Sentinels |
+| Moderate | Militia and Cults | Auxiliary Drive | 20 | Malcador Heavy Tank, Auxilia |
+| Moderate | Militia and Cults | Heavy Stubber | 12 | Carnodon Strike Squadron |
+| Moderate | Militia and Cults | Heavy flamer | 20 | Leman Russ Annihilator |
+| Moderate | Militia and Cults | Multi-laser | 15 | Arvus Lighter, Auxilia |
+| Moderate | Militia and Cults | Autocannon | 10 | Auxilia Sentinels |
+| Moderate | Militia and Cults | Lascannon | 15 | Auxilia Sentinels |
+| Moderate | Militia and Cults | Multi-melta | 15 | Auxilia Sentinels |
+| Moderate | Militia and Cults | Twin-linked Heavy Bolter | 25 | Land Raider Proteus |
+| Moderate | Militia and Cults | Twin-linked Lascannon | 25 | Land Raider Proteus |
+| Moderate | Sister of Silence | Armoured Ceramite | 25 | Sisters of Silence Kharon Pattern Acquisitor |
+| Moderate | Sister of Silence | Extra Armour | 10 | Sisters of Silence Kharon Pattern Acquisitor |
+| Moderate | Craftworld Aeldari | Star Engines | 20 | Vyper Squadron |
+| Moderate | Craftworld Aeldari | Spirit Stones | 15 | Vyper Squadron |
+| Moderate | Chaos Daemons | Phlegm Bombardment | 40 | Soul Grinder of Chaos |
+| Moderate | Chaos Daemons | Warp Gaze | 35 | Soul Grinder of Chaos |
+| Moderate | Chaos Daemons | Baleful Torrent | 30 | Soul Grinder of Chaos |
+| Higher | Astartes | Auxiliary Drive | 15 | Land Raider Phobos (DT) |
+| Higher | Astartes | Dozer Blade | 10 | Land Raider Phobos (DT) |
+| Higher | Astartes | Extra Armour | 10 | Terrax Pattern Termite Assault Drill |
+| Higher | Astartes | Frag Assault Launchers | 15 | Anvillus Pattern Dreadclaw Drop Pod |
+| Higher | Astartes | Hunter-killer Missile | 10 | Dreadnought Talon, Legion |
+| Higher | Astartes | Smoke Launchers | 15 | Triaros Armoured Conveyor |
+| Higher | Astartes | Explorator Augury Web | 55 | Land Raider Proteus (DT) |
+| Higher | Astartes | Armoured Cockpit | 10 | Xiphon Interceptor |
+| Higher | Astartes | Cyclonic Melta Lance | 30 | Leviathan Siege Dreadnought |
+| Higher | Astartes | Leviathan Storm Cannon | 20 | Leviathan Siege Dreadnought |
+| Higher | Astartes | Grav-flux Bombard | 30 | Leviathan Siege Dreadnought |
+| Higher | Astartes | Twin-linked Lascannon | 20 | Mhara Gal Tainted Dreadnought |
+| Higher | Astartes | Laser Destroyer Array | 20 | Vindicator Tank, Legion |
+| Higher | Astartes | Laser Destroyer | 15 | Spartan Assault Tank (DT) |
+| Higher | Astartes | Aiolos Missile Launcher | 45 | Deredeo Pattern Dreadnought |
+| Higher | Astartes | Reaper Autocannon Battery | 20 | Fire Raptor Gunship, Legion |
+| Higher | Astartes | Heavy Conversion Beamer | 40 | Contemptor Dreadnought Talon |
+| Higher | Mechanicum | Anbaric Claw | 25 | Krios |
+| Higher | Mechanicum | Auxiliary Drive | 20 | Macrocarid Explorator |
+| Higher | Mechanicum | Blessed Autosimulacra | 15 | Triaros Armoured Conveyor |
+| Higher | Mechanicum | Explorator Augury Web | 60 | Macrocarid Explorator |
+| Higher | Mechanicum | Smoke Launchers | 10 | Triaros Armoured Conveyor |
+| Higher | Mechanicum | Autocannon | 15 | Crusade Fleet Arvus Lighter Orbital Shuttle |
+| Higher | Solar Auxilia | Armoured Cockpit | 25 | Auxilia Arvus Lighter Orbital Shuttle |
+| Higher | Solar Auxilia | Auxiliary Drive | 15 | Dracosan Armoured Transport |
+| Higher | Solar Auxilia | Dozer Blade | 10 | Dracosan Armoured Transport |
+| Higher | Solar Auxilia | Extra Armour | 10 | Saturnyne Pattern Aurox Armoured Transport |
+| Higher | Solar Auxilia | Flare Shield | 25 | Auxilia Thunderbolt Heavy Fighter |
+| Higher | Solar Auxilia | Hunter-killer missile | 15 | Auxilia Leman Russ Annihilator |
+| Higher | Solar Auxilia | Searchlight | 11 | Auxilia Arvus Lighter Orbital Shuttle |
+| Higher | Solar Auxilia | Multi-Laser | 20 | Saturnyne Pattern Carnodon Strike Squadron |
+| Higher | Solar Auxilia | Pintle-mounted Heavy bolter | 20 | Auxilia Basilisk |
+| Higher | Solar Auxilia | Twin-Linked Lascannon | 30 | Saturnyne Pattern Carnodon Strike Squadron |
+| Higher | Militia and Cults | Dozer blade | 15 | Leman Russ Annihilator |
+| Higher | Militia and Cults | Extra armour | 15 | Leman Russ Annihilator |
+| Higher | Militia and Cults | Armoured Ceramite | 30 | Malcador Heavy Tank, Auxilia |
+| Higher | Militia and Cults | Hunter-killer Missile | 10 | Auxilia Sentinels |
+| Higher | Militia and Cults | Auxiliary Drive | 20 | Malcador Heavy Tank, Auxilia |
+| Higher | Militia and Cults | Heavy Stubber | 12 | Carnodon Strike Squadron |
+| Higher | Militia and Cults | Heavy flamer | 20 | Leman Russ Annihilator |
+| Higher | Militia and Cults | Multi-laser | 15 | Arvus Lighter, Auxilia |
+| Higher | Militia and Cults | Autocannon | 10 | Auxilia Sentinels |
+| Higher | Militia and Cults | Lascannon | 15 | Auxilia Sentinels |
+| Higher | Militia and Cults | Multi-melta | 15 | Auxilia Sentinels |
+| Higher | Militia and Cults | Twin-linked Heavy Bolter | 25 | Land Raider Proteus |
+| Higher | Militia and Cults | Twin-linked Lascannon | 25 | Land Raider Proteus |
+| Higher | Custodes | Armoured Ceramite | 25 | Legio Custodes Coronus Grav-Carrier |
+| Higher | Sister of Silence | Armoured Ceramite | 25 | Sisters of Silence Kharon Pattern Acquisitor |
+| Higher | Custodes | Extra Armour | 10 | Legio Custodes Coronus Grav-Carrier |
+| Higher | Sister of Silence | Extra Armour | 10 | Sisters of Silence Kharon Pattern Acquisitor |
+| Higher | Custodes | Arachnus Storm Cannon | 50 | Legio Custodes Telemon Heavy Dreadnought |
+| Higher | Craftworld Aeldari | Star Engines | 20 | Vyper Squadron |
+| Higher | Craftworld Aeldari | Spirit Stones | 15 | Vyper Squadron |
+| Higher | Chaos Daemons | Phlegm Bombardment | 40 | Soul Grinder of Chaos |
+| Higher | Chaos Daemons | Warp Gaze | 35 | Soul Grinder of Chaos |
+| Higher | Chaos Daemons | Baleful Torrent | 30 | Soul Grinder of Chaos |
+| Legendary | Astartes | Armoured Ceramite | 50 | Fellblade, Legion |
+| Legendary | Astartes | Auxiliary Drive | 15 | Land Raider Phobos (DT) |
+| Legendary | Astartes | Dozer Blade | 10 | Land Raider Phobos (DT) |
+| Legendary | Astartes | Extra Armour | 10 | Terrax Pattern Termite Assault Drill |
+| Legendary | Astartes | Flare Shield | 45 | Thunderbolt Heavy Fighter |
+| Legendary | Astartes | Frag Assault Launchers | 15 | Anvillus Pattern Dreadclaw Drop Pod |
+| Legendary | Astartes | Hunter-killer Missile | 10 | Dreadnought Talon, Legion |
+| Legendary | Astartes | Smoke Launchers | 15 | Triaros Armoured Conveyor |
+| Legendary | Astartes | Explorator Augury Web | 55 | Land Raider Proteus (DT) |
+| Legendary | Astartes | Armoured Cockpit | 10 | Xiphon Interceptor |
+| Legendary | Astartes | Cyclonic Melta Lance | 30 | Leviathan Siege Dreadnought |
+| Legendary | Astartes | Leviathan Storm Cannon | 20 | Leviathan Siege Dreadnought |
+| Legendary | Astartes | Grav-flux Bombard | 30 | Leviathan Siege Dreadnought |
+| Legendary | Astartes | Twin-linked Lascannon | 20 | Mhara Gal Tainted Dreadnought |
+| Legendary | Astartes | Laser Destroyer Array | 20 | Vindicator Tank, Legion |
+| Legendary | Astartes | Laser Destroyer | 15 | Spartan Assault Tank (DT) |
+| Legendary | Astartes | Aiolos Missile Launcher | 45 | Deredeo Pattern Dreadnought |
+| Legendary | Astartes | Reaper Autocannon Battery | 20 | Fire Raptor Gunship, Legion |
+| Legendary | Astartes | Heavy Conversion Beamer | 40 | Contemptor Dreadnought Talon |
+| Legendary | Mechanicum | Anbaric Claw | 25 | Krios |
+| Legendary | Mechanicum | Auxiliary Drive | 20 | Macrocarid Explorator |
+| Legendary | Mechanicum | Blessed Autosimulacra | 15 | Triaros Armoured Conveyor |
+| Legendary | Mechanicum | Explorator Augury Web | 60 | Macrocarid Explorator |
+| Legendary | Mechanicum | Smoke Launchers | 10 | Triaros Armoured Conveyor |
+| Legendary | Mechanicum | Autocannon | 15 | Crusade Fleet Arvus Lighter Orbital Shuttle |
+| Legendary | Mechanicum | Bio-Corrosive Rounds | 15 | Questoris Knight Armiger Talon |
+| Legendary | Mechanicum | Heavy Stubber | 10 | Questoris Knight Armiger Talon |
+| Legendary | Mechanicum | Canflagration Cannon | 35 | Questoris Knight Dominus |
+| Legendary | Mechanicum | Plasma Decimator | 60 | Questoris Knight Dominus |
+| Legendary | Mechanicum | Thundercoil Harpoon | 55 | Questoris Knight Dominus |
+| Legendary | Mechanicum | Volcano Lance | 50 | Questoris Knight Dominus |
+| Legendary | Solar Auxilia | Armoured Cockpit | 25 | Auxilia Arvus Lighter Orbital Shuttle |
+| Legendary | Solar Auxilia | Auxiliary Drive | 15 | Dracosan Armoured Transport |
+| Legendary | Solar Auxilia | Dozer Blade | 10 | Dracosan Armoured Transport |
+| Legendary | Solar Auxilia | Extra Armour | 10 | Saturnyne Pattern Aurox Armoured Transport |
+| Legendary | Solar Auxilia | Flare Shield | 25 | Auxilia Thunderbolt Heavy Fighter |
+| Legendary | Solar Auxilia | Hunter-killer missile | 15 | Auxilia Leman Russ Annihilator |
+| Legendary | Solar Auxilia | Searchlight | 11 | Auxilia Arvus Lighter Orbital Shuttle |
+| Legendary | Solar Auxilia | Multi-Laser | 20 | Saturnyne Pattern Carnodon Strike Squadron |
+| Legendary | Solar Auxilia | Pintle-mounted Heavy bolter | 20 | Auxilia Basilisk |
+| Legendary | Solar Auxilia | Twin-Linked Lascannon | 30 | Saturnyne Pattern Carnodon Strike Squadron |
+| Legendary | Militia and Cults | Dozer blade | 15 | Leman Russ Annihilator |
+| Legendary | Militia and Cults | Extra armour | 15 | Leman Russ Annihilator |
+| Legendary | Militia and Cults | Armoured Ceramite | 30 | Gorgon Heavy Transporter, Auxilia |
+| Legendary | Militia and Cults | Hunter Killer Missile | 10 | Gorgon Heavy Transporter, Auxilia |
+| Legendary | Militia and Cults | Auxiliary Drive | 20 | Malcador Heavy Tank, Auxilia |
+| Legendary | Militia and Cults | Heavy Stubber | 12 | Carnodon Strike Squadron |
+| Legendary | Militia and Cults | Heavy flamer | 20 | Leman Russ Annihilator |
+| Legendary | Militia and Cults | Multi-laser | 15 | Arvus Lighter, Auxilia |
+| Legendary | Militia and Cults | Autocannon | 10 | Auxilia Sentinels |
+| Legendary | Militia and Cults | Lascannon | 15 | Auxilia Sentinels |
+| Legendary | Militia and Cults | Multi-melta | 15 | Auxilia Sentinels |
+| Legendary | Militia and Cults | Twin-linked Heavy Bolter | 25 | Land Raider Proteus |
+| Legendary | Militia and Cults | Twin-linked Lascannon | 25 | Land Raider Proteus |
+| Legendary | Custodes | Armoured Ceramite | 25 | Legio Custodes Coronus Grav-Carrier |
+| Legendary | Sister of Silence | Armoured Ceramite | 25 | Sisters of Silence Kharon Pattern Acquisitor |
+| Legendary | Custodes | Extra Armour | 10 | Legio Custodes Coronus Grav-Carrier |
+| Legendary | Sister of Silence | Extra Armour | 10 | Sisters of Silence Kharon Pattern Acquisitor |
+| Legendary | Custodes | Arachnus Storm Cannon | 50 | Legio Custodes Telemon Heavy Dreadnought |
+| Legendary | Craftworld Aeldari | Star Engines | 20 | Vyper Squadron |
+| Legendary | Craftworld Aeldari | Spirit Stones | 15 | Vyper Squadron |
+| Legendary | Chaos Daemons | Phlegm Bombardment | 40 | Soul Grinder of Chaos |
+| Legendary | Chaos Daemons | Warp Gaze | 35 | Soul Grinder of Chaos |
+| Legendary | Chaos Daemons | Baleful Torrent | 30 | Soul Grinder of Chaos |
+
+## Not added — source or price required
+
+These entries have not been assigned invented prices or made free. Bundled gear is not a standalone purchase. Existing matching options are preserved. Some attachment names denote families rather than exact source options.
+
+- **Legiones — Searchlight**: No exact vehicle-option match in HH1 source.
+- **Legiones — Machine Spirit / Power of the Machine Spirit**: No exact vehicle-option match in HH1 source.
+- **Legiones — Flare/Chaff Launchers (Flyers)**: No exact vehicle-option match in HH1 source.
+- **Legiones — Twin-linked heavy bolter**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Legiones — Twin-linked heavy flamer**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Legiones — Siege drill**: No exact vehicle-option match in HH1 source.
+- **Legiones — Siege claw**: No exact vehicle-option match in HH1 source.
+- **Legiones — Twin-linked multi-melta**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Legiones — Dreadnought close combat weapon**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Legiones — Accelerator autocannon**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Legiones — Neutron beam laser**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Legiones — Quad lascannon**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Legiones — Twin-linked autocannon**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Legiones — Demolisher cannon**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Legiones — Battle cannon**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Legiones — Combi-weapon**: No exact vehicle-option match in HH1 source.
+- **Legiones — Earthshaker cannon**: No exact vehicle-option match in HH1 source.
+- **Legiones — Havoc launcher**: No exact vehicle-option match in HH1 source.
+- **Legiones — Medusa siege gun**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Legiones — Whirlwind missile launcher**: No exact vehicle-option match in HH1 source.
+- **Legiones — Quad mortar**: No exact vehicle-option match in HH1 source.
+- **Legiones — Twin-linked volkite culverin**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Legiones — Arachnus pattern heavy lascannon battery**: No exact vehicle-option match in HH1 source.
+- **Legiones — Volkite falconet**: No exact vehicle-option match in HH1 source.
+- **Legiones — Avenger bolt cannon**: No exact vehicle-option match in HH1 source.
+- **Legiones — Conversion beamer**: No exact vehicle-option match in HH1 source.
+- **Legiones — Hellstrike missile**: No exact vehicle-option match in HH1 source.
+- **Legiones — Tempest rockets**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Legiones — Kheres assault cannon**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Legiones — Kraken penetrator missiles**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Armoured Ceramite**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Flare/Chaff Launchers**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Infra-vision**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Searchlight**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Atomantic Shielding**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Mauler bolt cannon**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Taghmata — Sollex heavy las**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Mauler bolt cannon (twin-linked)**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Taghmata — Volkite culverin**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Taghmata — Multi-melta**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Volkite chieorovile**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Darkfire cannon**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Photon thruster**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Heavy conversion beamer**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Irad-cleanser**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Siege wrecker**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Irad engine**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Macrostubber**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Maxima bolter**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Graviton ram**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Rotor cannon**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Lightning gun**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Lascannon**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Plasma fusil**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Heavy bolter**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Taghmata — Plasma mortar**: No exact vehicle-option match in HH1 source.
+- **Taghmata — Heavy flamer**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Questoris — Ionic Flare Shield**: No exact vehicle-option match in HH1 source.
+- **Questoris — Armoured Ceramite (where listed)**: No exact vehicle-option match in HH1 source.
+- **Questoris — Flare/Chaff Launchers (where listed)**: No exact vehicle-option match in HH1 source.
+- **Questoris — Questoris battle cannon**: No exact vehicle-option match in HH1 source.
+- **Questoris — Volkite chieorovile**: No exact vehicle-option match in HH1 source.
+- **Questoris — Rapid-fire battle cannon**: No exact vehicle-option match in HH1 source.
+- **Questoris — Thermal cannon**: No exact vehicle-option match in HH1 source.
+- **Questoris — Shock lance**: No exact vehicle-option match in HH1 source.
+- **Questoris — Avenger gatling cannon**: No exact vehicle-option match in HH1 source.
+- **Questoris — Acheron flamestorm cannon**: No exact vehicle-option match in HH1 source.
+- **Questoris — Reaper chainsword**: No exact vehicle-option match in HH1 source.
+- **Questoris — Reaper chainfist**: No exact vehicle-option match in HH1 source.
+- **Questoris — Thunderstrike gauntlet**: No exact vehicle-option match in HH1 source.
+- **Questoris — Castigator bolt cannon**: No exact vehicle-option match in HH1 source.
+- **Questoris — Tempest warblade**: No exact vehicle-option match in HH1 source.
+- **Questoris — Atrapos lascutter**: No exact vehicle-option match in HH1 source.
+- **Questoris — Icarus autocannon array**: No exact vehicle-option match in HH1 source.
+- **Questoris — Graviton singularity cannon**: No exact vehicle-option match in HH1 source.
+- **Questoris — Ironstorm missile pod**: No exact vehicle-option match in HH1 source.
+- **Questoris — Stormspear rocket pod**: No exact vehicle-option match in HH1 source.
+- **Questoris — Phased plasma-fusil**: No exact vehicle-option match in HH1 source.
+- **Questoris — Hekaton siege claw**: No exact vehicle-option match in HH1 source.
+- **Questoris — Magna lascannon**: No exact vehicle-option match in HH1 source.
+- **Questoris — Rad cleanser**: No exact vehicle-option match in HH1 source.
+- **Questoris — Helios defence missiles**: No exact vehicle-option match in HH1 source.
+- **Solar — Armoured Ceramite**: No exact vehicle-option match in HH1 source.
+- **Solar — Explorator Adaption**: No exact vehicle-option match in HH1 source.
+- **Solar — Flare/Chaff Launchers**: No exact vehicle-option match in HH1 source.
+- **Solar — Smoke Launchers**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Solar — Volkite macro-saker**: No exact vehicle-option match in HH1 source.
+- **Solar — Neutron beam laser**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Solar — Heavy conversion beamer**: No exact vehicle-option match in HH1 source.
+- **Solar — Mortar battery**: No exact vehicle-option match in HH1 source.
+- **Solar — Battle cannon**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Solar — Stormsword siege cannon**: No exact vehicle-option match in HH1 source.
+- **Solar — Volcano cannon**: No exact vehicle-option match in HH1 source.
+- **Solar — Executioner plasma cannon**: No exact vehicle-option match in HH1 source.
+- **Solar — Melta cannon**: No exact vehicle-option match in HH1 source.
+- **Solar — Gravis lascannon**: No exact vehicle-option match in HH1 source.
+- **Solar — Laser destroyer array**: No exact vehicle-option match in HH1 source.
+- **Militia — Searchlight**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Militia — Smoke Launchers**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Militia — Executioner plasma cannon**: No exact vehicle-option match in HH1 source.
+- **Militia — Eradicator nova cannon**: No exact vehicle-option match in HH1 source.
+- **Militia — Heavy mortar**: No exact vehicle-option match in HH1 source.
+- **Militia — Quad launcher**: No exact vehicle-option match in HH1 source.
+- **Militia — Battle cannon**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Talons — Armoured Cockpit**: No exact vehicle-option match in HH1 source.
+- **Talons — Eclipse Shield**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Talons — Flare Shield**: No exact vehicle-option match in HH1 source.
+- **Talons — Macro Arae-shrikes**: No exact vehicle-option match in HH1 source.
+- **Talons — Machine Spirit**: No exact vehicle-option match in HH1 source.
+- **Talons — Capture-grid / vehicle-specific defensive systems**: No exact vehicle-option match in HH1 source.
+- **Talons — Hellion-pattern heavy cannon array**: No exact vehicle-option match in HH1 source.
+- **Talons — Iliastus accelerator cannon**: No exact vehicle-option match in HH1 source.
+- **Talons — Vratine missile launcher**: No exact vehicle-option match in HH1 source.
+- **Talons — Spiculus bolt launcher**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Talons — Spiculus heavy bolt launcher**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Talons — Corve las-pulsar**: No exact vehicle-option match in HH1 source.
+- **Talons — Iliastus accelerator culverin**: No exact vehicle-option match in HH1 source.
+- **Talons — Magna blaze cannon**: No exact vehicle-option match in HH1 source.
+- **Talons — Adrathic destructor**: No exact vehicle-option match in HH1 source.
+- **Talons — Twin-linked multi-melta**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Talons — Infernus incinerator**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Talons — Twin-linked heavy bolter**: No exact vehicle-option match in HH1 source.
+- **Craftworld — Shuriken cannon**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Craftworld — Distortion cannon**: No exact vehicle-option match in HH1 source.
+- **Craftworld — Heavy D-scythe**: No exact vehicle-option match in HH1 source.
+- **Craftworld — Scatter laser**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Craftworld — Bright lance**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Craftworld — Vibro cannon**: No exact vehicle-option match in HH1 source.
+- **Craftworld — Starcannon**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Craftworld — Shadow weaver**: No exact vehicle-option match in HH1 source.
+- **Craftworld — Fusion gun / fusion weapon**: No exact vehicle-option match in HH1 source.
+- **Craftworld — Pulse laser**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Craftworld — Laser lance**: No exact vehicle-option match in HH1 source.
+- **Craftworld — Shuriken catapult**: No exact vehicle-option match in HH1 source.
+- **Craftworld — D-cannon**: No exact vehicle-option match in HH1 source.
+- **Necron — Living Metal**: No exact vehicle-option match in HH1 source.
+- **Necron — Quantum Shielding (where listed)**: No exact vehicle-option match in HH1 source.
+- **Necron — Symbiotic Repair / self-repair rules where listed**: No exact vehicle-option match in HH1 source.
+- **Necron — Vehicle-specific teleportation and phase systems**: No exact vehicle-option match in HH1 source.
+- **Necron — Gauss cannon**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Necron — Particle whip**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Necron — Heavy gauss cannon**: No exact vehicle-option match in HH1 source.
+- **Necron — Heat ray**: No exact vehicle-option match in HH1 source.
+- **Necron — Gauss flayer array**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Necron — Heavy death ray**: No exact vehicle-option match in HH1 source.
+- **Necron — Gauss flux arc**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Necron — Death ray**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Necron — Tesla cannon**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Necron — Doomsday cannon**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Necron — Twin-linked tesla destructor**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Necron — Transdimensional beamer**: No exact vehicle-option match in HH1 source.
+- **Necron — Particle beamer**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Necron — Tachyon arrow**: No exact vehicle-option match in HH1 source.
+- **Necron — Particle shredder**: No exact vehicle-option match in HH1 source.
+- **Necron — Warscythe / vehicle-mounted melee systems**: No exact vehicle-option match in HH1 source.
+- **Chaos Daemons — Daemon / Daemonic vehicle rules where applicable**: No exact vehicle-option match in HH1 source.
+- **Chaos Daemons — Daemonic Resilience and vehicle-specific gifts where listed**: No exact vehicle-option match in HH1 source.
+- **Chaos Daemons — Harvester cannon**: No exact vehicle-option match in HH1 source.
+- **Chaos Daemons — Iron claw / daemon-engine close-combat weapons**: No eligible published standalone/upgrade price; requires explicit Host Facsimile Cost or source clarification.
+- **Chaos Daemons — Tongue / maw attacks where represented as weapon profiles**: No exact vehicle-option match in HH1 source.
+
+Agents, Dark Compliance, Mournival, Varangian and Ruinstorm sections supply no discrete item list in the attachment; their parent/entry-specific pools remain unchanged. Questoris additions are under Legendary Mechanicum vehicle armoury. No new Necron pool is created without eligible priced options. No mobile BattleScribe execution was available.
+
+
+## Installation
+
+Replace all four repository files on GitHub and update BattleScribe data. Existing chassis prices, Walking Meat restrictions and previous revisions are preserved.
+
 # Rangdan Confederacy — revision 37
 
 Walking Meat now requires exactly one Osseivore organism in the unit and a Non-Melded state (explicitly marked, or no chassis selected). Monstrous mutations are not eligible. The attached Levy is a separate unit and does not invalidate the one-Osseivore requirement.
