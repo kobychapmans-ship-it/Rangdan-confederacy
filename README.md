@@ -1,3 +1,11 @@
+# Rangdan Confederacy — revision 36
+
+Chassis options now carry explicit base prices instead of zero prices calculated entirely through repeats. Unit-wide chassis selection still charges every model, using explicit total prices for two- and three-model units.
+
+Per model: Lesser +10; Moderate +40; Higher +150; Legendary +300 points. Moderate Carrion Forge Troops use the same +40 chassis. The Synarch uses the shared Higher +150 chassis, for 80 + 150 = 230 points before other upgrades. Non-Melded models with no selected chassis pay no chassis charge.
+
+Chassis IDs, profiles, weapons, other upgrades, Carrion Forge rules and Puppet Masters are preserved. Replace the four repository files and refresh BattleScribe. Local cost and structural tests pass; the mobile application is not directly tested.
+
 # Rangdan Confederacy — revision 35
 
 Adds Carrion Forge Detachment and Osseivore Synarch (HQ, 80 points). The new force has 1–3 HQ, 2–8 Troops, 0–3 Elites, 0–3 Fast Attack, 0–4 Heavy Support and 0–1 Lords of War, with additional Osseivore compulsory-choice checks. Moderate Osseivore Hosts — Carrion Forge Troops is a separate Troops selection available only in this detachment. Normal Moderate Elites remain available.
