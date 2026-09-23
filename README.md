@@ -1,3 +1,17 @@
+# Rangdan Confederacy — revision 35
+
+Adds Carrion Forge Detachment and Osseivore Synarch (HQ, 80 points). The new force has 1–3 HQ, 2–8 Troops, 0–3 Elites, 0–3 Fast Attack, 0–4 Heavy Support and 0–1 Lords of War, with additional Osseivore compulsory-choice checks. Moderate Osseivore Hosts — Carrion Forge Troops is a separate Troops selection available only in this detachment. Normal Moderate Elites remain available.
+
+Synarch options link the same Higher Osseivore model/option definitions rather than maintaining another armoury copy. Its command identity changes only its own base cost, unit size and Non-Melded profile. It has no starting Tendrils or other wargear. Select Warlord to display Machine-Sovereign; Master of the Carrion Forge appears only in that force.
+
+Carrion Evolution controls are per model, one state/adaptation maximum. Leave them empty during army creation. After Core Escape mark Available; on subsequent legal Living Forge choose one adaptation. Core and vehicle profiles display appropriate changes. AV/HP are dormant Non-Melded. Adaptations are not in Puppet Masters pools. Split model selections when individual adaptations differ; purchased host/chassis choices remain unit-wide as before.
+
+The No Force Org Slot section contains optional Carrion rules and battlefield records, one active Imperative, and three infection records. Timings, ranges, targets, legal battlefield transfers, casualties and newly spawned organisms are tabletop state, not automatically simulated by BattleScribe. No army-building purchase is added for spawned organisms.
+
+The supplied infection rule requires exactly three enemy vehicles; no alternative is invented for an opponent with fewer than three. Its explicit Explodes exception is retained.
+
+Replace the four files in the GitHub repository root and refresh BattleScribe. Structural and scenario checks accompany this build; the mobile app has not been directly tested.
+
 # Rangdan Confederacy — revision 34
 
 Puppet Masters free upgrades are now costed controls. Select normal Host Strengthening / Osseivore statistic upgrades, then select matching claims under Puppet Masters — Free Upgrade Allocation. Each claim refunds its exact cost, including per-model scaling. The original choice remains responsible for stats and normal caps.
