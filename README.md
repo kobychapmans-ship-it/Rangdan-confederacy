@@ -1,3 +1,15 @@
+# Rangdan Confederacy — Revision 40
+
+Selected complete HH1 Vehicle/Walker profiles now include the Host Level's meld minimums, plus +1 HP and +1 Attack (+2 Attacks for Legendary). Superior source characteristics remain unchanged. Missing/non-numeric WS, Strength, Initiative and Attacks are not invented. These meld values are already included in the displayed profile: do not add them again. The existing modular chassis profiles already include their meld baseline and are not charged or boosted twice.
+
+Live source vehicle profiles are linked to the Osseivore organism, so the chosen shell receives unit-wide Statistic Modifications and that individual's Carrion Adaptation. Core Escape/Non-Melded hides that model's shell row; a specific HH1 shell suppresses the generic chassis row. The generic row appears only when the modular chassis itself is selected. The Lesser Dracosan baseline is BS3, Front13, Side12, Rear11, HP6 before purchased upgrades. Source weapon, transport and equipment options and prices are retained.
+
+Collective Form is now a selectable Free Vehicle Upgrade submenu. Only the selected host faction's refund pool is available, and a refund still requires the matching paid non-weapon vehicle upgrade. The Legendary provider, shared-faction and one-upgrade limits remain. This is an editing submenu; roster output lists only selected entries, not every refund option.
+
+External host vehicle/manual source-cost buttons have been removed. Existing Monstrous Mutation choices are under the organism's Non-Melded control, not among vehicle upgrades. No new mutation eligibility is granted to Lesser, Higher or Synarch. Native mutation effects remain on the organism and cannot modify a vehicle shell.
+
+Existing costs, Enhanced Host Weapons and vehicle eligibility are retained. XML, reference, selection-condition and arithmetic regression checks are included in the project. These are local tests, not a mobile BattleScribe execution. After replacing all four repository files, update the catalogue; reselect affected forms/upgrade controls in an existing roster if cached selections persist.
+
 # Rangdan Confederacy — Revision 39
 
 Enhanced Host Weapons now changes Legendary Cerabvore weapon profiles, including pre-battle Maturation entries: Acidic Bite is Strength +1, AP4. Shared weapons on other units remain unchanged.
