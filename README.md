@@ -1,3 +1,15 @@
+# Rangdan Confederacy — Revision 39
+
+Enhanced Host Weapons now changes Legendary Cerabvore weapon profiles, including pre-battle Maturation entries: Acidic Bite is Strength +1, AP4. Shared weapons on other units remain unchanged.
+
+Complete HH1 vehicle options appear under Vehicle Form and require their matching Host Faction. Lesser: Troops/Dedicated Transport, not Heavy or Super-heavy; Moderate: Elites/Fast Attack/Heavy Support, not Heavy or Super-heavy; Higher: any non-Super-heavy; Legendary: any vehicle. Existing faction tiers remain. Complete vehicles replace the modular chassis and use their listed vehicle/upgrade costs without armoury surcharges. Configuration is unit-wide and prices scale with Osseivore count. Synarch uses Higher access. Source vehicle squadron options are restricted to one shell per organism. Dedicated transports remain part of the parent Osseivore unit for scoring/FOC.
+
+Collective Form provides one non-weapon vehicle upgrade refund per Osseivore, requires a Legendary provider and a single Osseivore vehicle faction, and does not stack with additional providers. Buy the upgrade then select its matching refund. Unit-wide configuration refunds the same upgrade for each organism. Weapons and chassis are excluded.
+
+Source: BSData/horus-heresy-1st-edition, archived commit 0a4c10da. Native army FOC restrictions are replaced with Rangdan eligibility; source mount/replacement and faction restrictions remain applicable. Mobile application rendering requires testing.
+
+Replace all four GitHub repository files, then update BattleScribe data.
+
 # Revision 38 — HH1 vehicle armoury inventory audit
 
 Source: BSData/horus-heresy-1st-edition, commit 0a4c10da15f4ea40eea0932090fadafe3b90b696.
