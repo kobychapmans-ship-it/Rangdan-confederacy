@@ -1,11 +1,7 @@
-# Rangdan Confederacy — Revision 41
+# Rangdan Confederacy — Revision 42
 
-Vehicle display repair: catalogue queries now use real ancestor IDs instead of the invalid unit pseudo-scope. Specific vehicle and generic chassis rows are hidden by default and enabled only by their matching purchased form. This also repairs the stat, eligibility, price-scaling and refund queries that used the same unsupported scope. Individual core/adaptation scopes are retained for mixed-state units.
+Vehicle profiles now belong to the selected vehicle/form, not to a list of hidden links on the organism. Each Osseivore model chooses exactly one current form: Non-Melded (default), Facsimile chassis, or a named source vehicle. This includes the Higher-grade Osseivore Synarch. Profiles retain meld statistics, purchased statistic modifications and model-local Carrion adaptations. Facsimile rules remain attached to Facsimile chassis only.
 
-Higher/Synarch and Moderate/Carrion Troops share a real options container. Both now receive their Collective Form refund tab, which had previously been incorrectly placed at catalogue root. Source vehicle and modular chassis choices remain alternatives.
+Chassis and vehicle option base prices are unchanged. Form purchases now belong to individual models, so obsolete unit-size chassis cost multipliers were removed. Choose each model's form and upgrades separately. To represent Core Escape in a roster, replace that model's current form with Non-Melded; this is a battlefield display change, not an army-creation refund. Keep the starting roster for points accounting.
 
-Facsimile Component Rules are supplied only by a Facsimile Vehicle Chassis. Movement-pattern and hardpoint controls are inside that chassis option. Faction selection or a complete source vehicle does not add the Facsimile rules.
-
-Conservative cleanup removes unreachable shared definitions, exact duplicate modifiers/links and obsolete generic uncosted/fallback placeholder choices. Named, explicitly priced armoury items are retained. The project includes a detailed audit and regression results.
-
-Replace all four repository files and refresh BattleScribe. Because the shared Osseivore option hierarchy changed, recreate affected Osseivore selections in old rosters. Tests check actual query scopes and selection paths as well as arithmetic; native iOS BattleScribe rendering still requires user confirmation.
+Replace the four repository files, refresh BattleScribe and recreate affected Osseivore selections. Existing roster selections cannot safely migrate across the changed form hierarchy. The index URL is unchanged. Local structural and selected-tree regression tests are included in the project; native BattleScribe/iOS rendering has not been tested here.
