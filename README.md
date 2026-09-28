@@ -1,7 +1,9 @@
-# Rangdan Confederacy — Revision 42
+# Rangdan Confederacy — Revision 43
 
-Vehicle profiles now belong to the selected vehicle/form, not to a list of hidden links on the organism. Each Osseivore model chooses exactly one current form: Non-Melded (default), Facsimile chassis, or a named source vehicle. This includes the Higher-grade Osseivore Synarch. Profiles retain meld statistics, purchased statistic modifications and model-local Carrion adaptations. Facsimile rules remain attached to Facsimile chassis only.
+Psy-steal Screech now uses Hellstorm, S8, AP2, Primary Weapon, Lingering Death, Soul Razor and Soul Strip. Its base cost remains 100 points; Ablative Morphology retains its existing +10-point surcharge. Existing GMC/Titan eligibility and Enhanced Host Weapons modifiers are retained. All eight weapon selections link the new Soul Strip rule; unrelated Soul Siphon rules are unchanged.
 
-Chassis and vehicle option base prices are unchanged. Form purchases now belong to individual models, so obsolete unit-size chassis cost multipliers were removed. Choose each model's form and upgrades separately. To represent Core Escape in a roster, replace that model's current form with Non-Melded; this is a battlefield display change, not an army-creation refund. Keep the starting roster for points accounting.
+Soul Strip counts models removed by the weapon, including Lingering Death casualties, at the end of each phase and creates the corresponding Wounds of Chaos Spawn/Giant Chaos Spawn in the Hellstorm template area. The screenshot does not specify carrying unused Wounds between phases, so no additional carry-over rule is introduced.
 
-Replace the four repository files, refresh BattleScribe and recreate affected Osseivore selections. Existing roster selections cannot safely migrate across the changed form hierarchy. The index URL is unchanged. Local structural and selected-tree regression tests are included in the project; native BattleScribe/iOS rendering has not been tested here.
+No Force Org Slot now contains Chaos Spawn — Soul Strip (1–5 models) and Giant Chaos Spawn — Soul Strip (one model; repeat the entry as needed). These are zero-point battlefield-generated records, not free starting units. Profiles are from the archived 7th-edition BSData CSM and Renegades & Heretics catalogues. Their Wounds are 3 and 4 respectively. Giant Spawn mutation details are cross-checked against the linked period rules summaries in the project source note.
+
+Revision 42's selected-form vehicle profile structure is preserved. Replace all four repository files and refresh BattleScribe. Native iOS rendering has not been tested here.
