@@ -1,3 +1,3 @@
-# Rangdan Confederacy - revision 47
+# Rangdan Confederacy revision 48
 
-Final profile-name overrides follow stat modifications again. Melded/Non-Melded visibility tests use concrete selected bodies, including Primarch, instead of option-group counts. The exclusive Legendary Primarch host body costs 400 points (300-point Legendary body plus 100-point premium), separately from the 200-point organism. Astartes armoury retained. Replace all four repository files, refresh data and recreate affected selections. Native iOS output must still be confirmed.
+Restored v44 local live-profile placement and selection query settings. Primarch has its own included Artificer Armour, Iron Halo, master-crafted Paragon Blade and master-crafted combi-weapon profiles; Astartes armoury remains available for additional purchases without its stock loadout. Costs and cap tables retained. Native BattleScribe display has not been tested. Replace all four root files and recreate affected roster selections.
