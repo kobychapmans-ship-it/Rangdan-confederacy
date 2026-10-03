@@ -1,9 +1,15 @@
-# Rangdan Confederacy — Revision45
+# Rangdan Confederacy — revision 46 loading repair
 
-- All four Facsimile chassis cost 5 points per model; Synarch shares the Higher chassis. Named source vehicles keep their original prices.
-- Corrupted / Lost Primarch is an exclusive Legendary Alternate Host Body, including Legendary Maturation paths. Its Astartes armoury is nested in the body; it cannot combine with another host. Body traits cease while Non-Melded.
-- Live profile modifiers are on links owned by the selected form/model, including Statistic Modifications, source equipment, save changes and Carrion adaptations. No all-vehicle profile list is attached to the general unit.
-- Universal numeric limits: WS/BS/S/T/W/I/A/Ld 10; front/side/rear AV15; saves best 2+/2++. HP/capacity are excluded.
-- Exact duplicate modifiers/links and empty obsolete containers removed. Revision44 heavy weapons retained at approved prices.
+The published revision 45 catalogue and repository index match the delivered files. The upload was intact.
 
-Replace the four repository files and refresh BattleScribe. Recreate affected unit selections to clear old form/armoury paths. Native BattleScribe/iOS display has not been tested in this environment.
+The full BattleScribe 2.03 XSD check found actual structural failures: Carrion Forge's rules links followed its category links in the wrong order; four Gargantuan host options contained two modifier containers each; and an imported game-system profile retained the game-system namespace. Revision 46 fixes these faults without dropping their rules or option modifiers.
+
+Revision 45 also expanded to 657,890,264 bytes of XML, with condition nesting up to 124 levels. Compact numeric decision tables reduce this to approximately 255 MB, with maximum overall XML depth 41. Numeric replacements still apply on the selected model/form's live profile link. These tables respect mutually exclusive host selections and the universal stat/AV limits.
+
+Validation includes the full catalogue XSD, nested ZIP integrity and matching indexes, unique identifiers and resolved targets, selected-owner profile links, chassis costs, exclusive Primarch access, stock/Terminator saves, vehicle statistic modifications and caps, sampled raw arithmetic comparisons, and unchanged selection/cost/constraint inventories. Detailed counts are in the JSON reports included with the project.
+
+Native BattleScribe on iOS is not available here. The repaired file is schema-valid; on-device loading and performance still require confirmation. The catalogue remains large because it includes the extensive faction and vehicle options.
+
+Upload all four files from the repository ZIP to the repository root, replacing the existing files. Confirm index.xml reports revision 46, then refresh BattleScribe. If BattleScribe retains the failed revision, remove its local Rangdan catalogue and redownload it. Keep existing roster backups; recreate affected selections if their old option paths persist.
+
+Reproduction: run work/revision46.py against the bundled revision45 repository ZIP; then run work/validate_schema46.py, work/validate_revision46.py and work/audit_preservation46.py.
