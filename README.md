@@ -1,3 +1,3 @@
-# Rangdan Confederacy revision 48
+# Rangdan Confederacy revision 49
 
-Restored v44 local live-profile placement and selection query settings. Primarch has its own included Artificer Armour, Iron Halo, master-crafted Paragon Blade and master-crafted combi-weapon profiles; Astartes armoury remains available for additional purchases without its stock loadout. Costs and cap tables retained. Native BattleScribe display has not been tested. Replace all four root files and recreate affected roster selections.
+Form-owned Cerabvore rows; recursive profile queries restored within explicit unit/model scopes. Primarch armoury bindings and replacement restrictions repaired, saves rebuilt from equipped gear, included combi-weapon unified with corrected standard boltgun mode and linked weapon rules. Host cost remains 400 points, separate from its 200-point organism; four facsimile chassis remain 5 points. Replace all four repository-root files, refresh data and recreate affected roster selections. Native iOS display is not independently verified.
