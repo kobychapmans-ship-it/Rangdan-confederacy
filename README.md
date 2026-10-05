@@ -1,29 +1,13 @@
-# Rangdan Confederacy — catalogue revision 51
+# Rangdan Confederacy revision 52
 
-Extract this ZIP and replace all four files in the root of your GitHub repository:
-- index.bsi
-- index.xml
-- Rangdan_Confederacy_HH1.catz
-- README.md
+Replace all four files in your GitHub repository root, then refresh BattleScribe.
+Higher Facsimile chassis: 150 points, shared by Higher Osseivores and the Synarch. Other tier chassis costs and 5-point movement patterns are unchanged.
+Facsimile hardpoints are individual weapon choice menus (2/4/6/8). Native vehicle weapons use their original source-listed mount and in-built upgrade structure, with compatible weapons selected within that mount. Optional mounts remain optional; stock choices, source costs and vehicle profiles remain intact. Batteries and missile bundles are one source-listed installation, not one hardpoint per firing mode or shot. Titan-compatible replacements require a matching second hardpoint reservation.
+Collective Form is a visible option, available when a Legendary Osseivore is present, a legal shell is occupied and the same-faction restrictions are met. Select the purchased vehicle equipment first, then its matching free-upgrade refund. Weapons, vehicle bodies and organism upgrades are excluded. It is dormant while Non-Melded.
+Requires Horus Heresy 1.0 game system revision 165. Native iOS/Android BattleScribe has not been independently tested.
 
-BattleScribe data-index URL:
-https://raw.githubusercontent.com/kobychapmans-ship-it/Rangdan-confederacy/main/index.bsi
+Validation: official BattleScribe 2.03 catalogue XSD, archive CRCs, IDs, references, default selections and entry-link cycles passed. Scoped profile, vehicle statistic, save, host payload and new hardpoint/Collective Form regression checks passed. 2,399 revision-specific checks; 2,331 source-listed mount menus. Existing Unit/Vehicle/Walker profiles were not copied into weapon selectors.
 
-Requires the Horus Heresy 1.0 game system, ID ca571888-56a9-c58e-ddaf-54f4713538bc, revision 165.
+Expanded catalogue XML: 223,195,828 bytes. Shared weapon definitions and tier pools avoid duplicating profile/rule payloads in every hardpoint.
 
-## Revision 51
-
-- Expanded catalogue XML reduced from 370,363,055 to 204,528,626 bytes (44.78%).
-- Consolidated repeated guards and identical set effects. Removed editor comments, empty containers and explicitly defaulted XML attributes. No existing public selection IDs, choice definitions, profile contents or listed base costs were removed or renamed.
-- Each individual Titan weapon requires one additional choice named "Second slot occupied by Titan weapon" in another weapon slot. That slot has a maximum of one choice, so it cannot also hold an ordinary weapon. The catalogue validates one reserved slot per selected Titan weapon; an incomplete or excessive reservation is an invalid selection. Squad quantity pools and the existing two-hardpoint Titan costs are retained.
-
-## Validation
-
-Official BattleScribe 2.03 catalogue XSD: passed.
-Archive CRCs, catalogue/index metadata, IDs, references, defaults, HH1 profile types and selection dependency cycles: passed.
-14,653 automated behaviour checks passed, covering selected profile visibility, vehicle stat changes, individual model isolation, Primarch equipment, armour/save effects, Gargantuan eligibility and Titan slot reservations.
-All 220,999 existing identifiers and 17,997 profile definitions are retained.
-
-Native Android/iOS BattleScribe runtime was not available for testing. These checks validate the files and tested selection behaviour; they do not establish that every phone will load or run the catalogue without crashing. The expanded XML remains substantial despite the reduction.
-
-After updating the repository, refresh BattleScribe data. If an old roster retains invalid selections, remove and re-add the affected selection. For a Titan weapon, choose the weapon first, then its reserved slot.
+Native Android/iOS BattleScribe runtime was not available. These file and selection tests are not a guarantee against phone-specific performance issues. Existing rosters may require removing and re-adding a changed weapon or vehicle selection.
