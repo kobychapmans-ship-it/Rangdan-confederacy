@@ -1,13 +1,14 @@
-# Rangdan Confederacy revision 55
+Rangdan Confederacy - BattleScribe revision 56
 
-Replace all four repository root files, then refresh BattleScribe data.
+Install these four repository files using the same v55 procedure. Catalogue and index revision: 56.
 
-Restores v51 vehicle weapon choices and Facsimile/organism armouries. Removes v52-v54 hardpoint menus and compatible-weapon pool expansion. Keeps v54 corrected chassis costs, Collective Form behavior, profiles and rules. v51 Titan second-slot reservation choices remain.
+Changes:
+- Moderate Osseivore Facsimile chassis: 40 pts + 5 pts chassis type = 45 pts before other upgrades.
+- Collective Form: a single manual refund counter. Quantity equals points to subtract (15 selections = -15 pts). Buy the eligible upgrade normally and refund only the allowance permitted by Collective Form. No automated eligibility/allowance calculation.
+- Statline and rule-heading calculation sources use hidden, unnamed count markers, preventing absent-option tests from listing the entire option pool. Selected equipment and rules retain their normal names.
+- Moderate Cerabvore squad leader follows the Lesser unit's host faction and melded state. Its statline belongs to the leader. The body cost adds the Moderate-minus-Lesser difference once: Militia 14 minus 4 = +10 pts in addition to the existing +5 parasite upgrade. Included equipment follows the squad.
+- v55 simpler vehicle menus retained.
 
-Data index: https://raw.githubusercontent.com/kobychapmans-ship-it/Rangdan-confederacy/main/index.bsi
+Existing rosters: remove any old Collective Form upgrade claims and enter the correct refund quantity; remove an independently selected leader Non-Melded entry. The leader now follows the squad state.
 
-Requires Horus Heresy 1.0 game system revision 165. Schema, references, identifiers and preservation checks passed. Native iOS/Android roster creation is untested. Weapon selections made using v52-v54 hardpoint menus may need reselection.
-
-Validated: 522 host profile rows; 1,729 visibility cases; 6,480 vehicle cases; 4,296 scope/isolation cases; 35 Primarch cases; 52 host payloads; 1,932 armour cases; 4 weighted budgets; 40 Collective Form cases including Synarch. Retained internal category memberships passed. Linked candidate tree restored to 63,830 nodes, matching v51 (v54: 428,535). No recursive selection or information links found.
-
-Higher/Synarch Facsimile chassis remains +150 pts; Legendary +300 pts. Other v54 entries, costs and rules are retained.
+Native BattleScribe phone rendering is not available in this environment.
