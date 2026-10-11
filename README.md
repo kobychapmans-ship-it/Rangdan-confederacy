@@ -1,13 +1,13 @@
-Rangdan Confederacy BattleScribe catalogue v62 - manual stat values
+Rangdan Confederacy HH1 v63
 
-Four install files, under 13 MB. Import Rangdan_Confederacy_HH1.catz into the existing HH1 data set. Look for Rangdan v62 - manual stat values.
+Install these four files with the existing HH1 game system and catalogue dependencies. Catalogue and index revision: 63.
 
-Native BattleScribe rendering could not be run in this environment. The supplied V61 vs iain.html confirms the v61 marker but failed displayed stats. V62 therefore implements the requested manual fallback instead of another automatic-stat fix.
+Each Complete Vehicle chassis has a Complete Vehicle Chassis and Weapon Loadout section. Mounted stock weapons and their exchange choices now allocate a separate chassis slots cost, automatically totalled beside points. Select Replaced / not equipped in a mount to remove its weapon profiles and allocated slots. This is an empty choice, not a refund or a free replacement weapon. Existing point prices are unchanged.
 
-Paid Osseivore upgrades retain their costs and game rules. They no longer change Osseivore baseline stat profiles, profile names, vehicle types or transport capacities. This includes Lesser, Moderate, Higher, Legendary, the Synarch, Facsimile and complete vehicle forms. Original baseline characteristics, source equipment effects, selected body visibility and the inherent Synarch baseline are retained.
+Leviathan example: the two Assault-type Heavy Flamers allocate 1 each; two Siege Claws and their two built-in Meltaguns allocate 1 each. Stock total 6. Replace both Torso Heavy Flamers to leave 4 slots and no Heavy Flamer profile. Replace only one to leave 5; the other still shows.
 
-Open an individual Osseivore model, choose Individual Stat Changer (manual final values), and select only fields you need to override. Each chosen field has an ordinary fixed profile in the Manual Stat Values table. These entries cost 0 and do not purchase upgrades. Example: for a Moderate Walker with +1 Front and Side Armour, select Front = 13, Side = 13 and Type = Vehicle (Walker). The printed base profile stays unchanged; the separate manual table records those final values.
+Weapon weights: Pistol/Rapid Fire/Assault/Salvo 1, Heavy/Ordnance 2, Primary Weapon 4. Melee retains 1. A multi-mode/twin-linked/stock battery option is counted once at its highest weight; counted copies and separate built-in selections each count. Grenades and non-weapon equipment do not allocate chassis slots. Rangdan vehicle weapon additions to Complete forms are included.
 
-Manual fields: WS, BS, S, T, W, I, A, Ld, Front, Side, Rear, HP, Save, Transport capacity and Type. Leave unused fields unselected. Each editor belongs to its individual model; there are no upgrade lookup formulas in the manual profiles.
+The existing manual Chassis Slot Limit tracker remains the allowance check; enter the occupied total there. Separate chassis slots costs do not spend points or grant capacity.
 
-Catalogue schema, references, costs, model/menu coverage and removal of upgrade-driven body modifiers are checked. Any local HTML preview is a preview of the static manual profiles, not a native BattleScribe screenshot. Native phone rendering remains untested.
+v62 Individual Stat Changer remains available and unchanged. Body statlines remain at baseline. This build uses selection ownership to remove weapon profiles, with no new body statline automation. XML, reference, cost, loadout and isolation checks are performed; native BattleScribe visual testing is unavailable.
