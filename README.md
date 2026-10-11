@@ -1,13 +1,9 @@
-Rangdan Confederacy HH1 v63
+Rangdan Confederacy HH1 v64
 
-Install these four files with the existing HH1 game system and catalogue dependencies. Catalogue and index revision: 63.
+Four install files. Re-select the Osseivore model/body in an existing roster to load the flat menus and body-local Final Stat Values controls. Warlord and Machine Directives are on the main Synarch unit screen. The Complete Vehicle Chassis and Weapon Loadout wrappers and Moderate/Higher Options proxy entries no longer add another screen.
 
-Each Complete Vehicle chassis has a Complete Vehicle Chassis and Weapon Loadout section. Mounted stock weapons and their exchange choices now allocate a separate chassis slots cost, automatically totalled beside points. Select Replaced / not equipped in a mount to remove its weapon profiles and allocated slots. This is an empty choice, not a refund or a free replacement weapon. Existing point prices are unchanged.
+Open the selected body/chassis, choose Final Stat Values (set displayed stats), then select the final value for a field. Front = 15 sets the Front Armour characteristic of that body to 15. Side/Rear and other fields are independent. Multiple models/vehicles have separate controls. Clearing a field restores the baseline/source value. Paid upgrades do not automatically set the final values and retain their costs and rules. The separate v62 manual-values table is hidden.
 
-Leviathan example: the two Assault-type Heavy Flamers allocate 1 each; two Siege Claws and their two built-in Meltaguns allocate 1 each. Stock total 6. Replace both Torso Heavy Flamers to leave 4 slots and no Heavy Flamer profile. Replace only one to leave 5; the other still shows.
+Only points are displayed as a visible roster cost. Name subtotals show exact values through 128 slots, and 129+ for larger loadouts; individual weapon tags retain exact allocations. Chassis slot weights are shown as weapon and vehicle name tags. Hidden bookkeeping retains the existing slot totals; no extra points are charged. Slot weights use the published Type: Pistol/Rapid Fire/Assault/Salvo 1, Heavy/Ordnance 2, Primary Weapon 4; melee 1. Leviathan Assault-type flamers use 1 each: six stock slots, five with one replaced, four with both replaced. The existing manual Chassis Slot Limit tracker is retained. Replaced / not equipped removes the weapon and its allocation, and does not grant a replacement or a base chassis refund.
 
-Weapon weights: Pistol/Rapid Fire/Assault/Salvo 1, Heavy/Ordnance 2, Primary Weapon 4. Melee retains 1. A multi-mode/twin-linked/stock battery option is counted once at its highest weight; counted copies and separate built-in selections each count. Grenades and non-weapon equipment do not allocate chassis slots. Rangdan vehicle weapon additions to Complete forms are included.
-
-The existing manual Chassis Slot Limit tracker remains the allowance check; enter the occupied total there. Separate chassis slots costs do not spend points or grant capacity.
-
-v62 Individual Stat Changer remains available and unchanged. Body statlines remain at baseline. This build uses selection ownership to remove weapon profiles, with no new body statline automation. XML, reference, cost, loadout and isolation checks are performed; native BattleScribe visual testing is unavailable.
+XML/schema, scope/isolation, final profile values and stock weapon removal checks are performed. Native BattleScribe application/visual testing is unavailable; data/evaluator checks are not a native rendering test.
