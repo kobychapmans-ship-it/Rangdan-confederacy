@@ -16,3 +16,5 @@ Retained: v58 HH1 Host Facsimile prices; free included Host Body equipment; orig
 Existing rosters that used Weapon 1-6 will need those Legendary weapons reselected in the shared menu. Review slot totals after updating because Heavy/Ordnance and Primary weapons now consume more of the existing allowance.
 
 Validation: official catalogue schema, unique IDs/references, budget/price checks and retained body/leader/vehicle/armour/scope regressions. Native BattleScribe phone loading/rendering has not been tested here.
+
+V60: Osseivore statistic purchases use the selected unit scope. Facsimile movement patterns use the owning chassis scope. Complete vehicle profiles are bound directly to their selected form, with Fast, Heavy, Super-heavy and Transport changes shown in Type. Transport Ship updates capacity. Published base stats, existing prices, options and weapon weights are retained. Native BattleScribe phone rendering remains untested.
